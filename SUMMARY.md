@@ -2,6 +2,10 @@
 
 * [简介](README.md)
 * [如何参与项目，构建知识库？](guide/How involved in the project.md)
+* 准备工作
+    * [Windows下安装NodeJS](guide/install nodejs for pc.md)
+    * [Linux下安装NodeJS](guide/install nodejs for linux.md)
+    * [MacOS下安装NodeJS](guide/install nodejs for mac.md)
 * 编程开发
     * CSharp
         * VSTO
