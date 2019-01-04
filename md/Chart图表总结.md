@@ -2,6 +2,8 @@
 
 > Chart图表总结
 
+
+
 ![](https://ws2.sinaimg.cn/large/006tKfTcly1fsru7ucpf1j30xt0h1jut.jpg)
 
 1. 一个chart可以包含多个chartArea。 chartArea是具体的坐标区域。
