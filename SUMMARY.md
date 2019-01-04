@@ -15,7 +15,7 @@
             * [VSTO个人开发总结](md/VSTO个人开发总结.md)
         * 控件总结
             * Chart图表
-                * [CSharp Chart控件:chart、Series、ChartArea曲线图绘制的重要属性](md/CSharp Chart控件:chart、Series、ChartArea曲线图绘制的重要属性.md)
+                * [CSharp Chart控件:chart、Series、ChartArea曲线图绘制的重要属性](md/CSharp Chart控件曲线图绘制的重要属性.md)
                 * [Chart图表基本模型](md/Chart图表基本模型.md)
                 * [Chart图表总结](md/Chart图表总结.md)
             * DataGirdView
