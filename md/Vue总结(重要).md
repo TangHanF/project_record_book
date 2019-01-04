@@ -115,29 +115,20 @@ var app = new Vue({
 1.2 基本指令
 --------
 
-### 
-
-* **v-text**
+### v-text
 
  更新元素的 `textContent`。如果要更新部分的 `textContent` ，需要使用 `{{ Mustache }}` 插值。
 
-### 
-
-* **v-html**
+### v-html
 
 输出原始HTML。
 
-### 
+### v-show
 
-* **v-show**
 
-****
+### v-bind
 
-### 
-
-* **v-bind**
-
-** 绑定属性。**
+**绑定属性。**
 
  简写为“:”，例如：
 
@@ -150,11 +141,9 @@ var app = new Vue({
 
 可以将“url”定义成data数据项，动态更新data.url则a标签的url动态更新，更加灵活。
 
-### 
+### v-on
 
-* **v-on**
-
-** 绑定事件。**
+**绑定事件。**
 
  简写为“@”，例如：
 
@@ -165,19 +154,13 @@ var app = new Vue({
         <a @click="doSomething">...</a>
 ```
 
-### 
+### v-model
 
-* **v-model**
+**数据双向绑定。**
 
-** 数据双向绑定。**
+### v-if
 
-### 
-
-* v-if
-
-### 
-
-* v-for
+### v-for
 
 1.3 生命周期
 --------
