@@ -1,6 +1,11 @@
 # Summary
 
 * [简介](README.md)
+* [如何参与项目，构建知识库？](guide/How involved in the project.md)
+* 准备工作
+    * [Windows下安装NodeJS](guide/install nodejs for pc.md)
+    * [Linux下安装NodeJS](guide/install nodejs for linux.md)
+    * [MacOS下安装NodeJS](guide/install nodejs for mac.md)
 * 编程开发
     * CSharp
         * VSTO
@@ -186,7 +191,7 @@
         * 总结篇
             * [Vue知识点整理](md/Vue知识点整理.md)
             * [Vue开发细节总结](md/Vue开发细节总结.md)
-            * [Vue总结(重要)](md/Vue总结(重要).md)
+            * [Vue总结(重要)](md/Vue总结[重要].md)
     * WebPack代码重构个人总结.md
         * 问题解决
             * [Component template should contain exactly one root](md/Component template should contain exactly one root.md)
