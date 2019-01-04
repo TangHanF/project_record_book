@@ -96,6 +96,8 @@ Gitbook项目。
 
 ### Windows系统
 
+[参考此处](guide/install nodejs for pc.md)
+
 ### Linux系统
 
 ### MacOS
