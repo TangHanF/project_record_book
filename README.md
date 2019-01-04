@@ -6,20 +6,28 @@ Gitbook项目。
 
 一个想变成公共知识库的Project 😂
 
-# 在线访问
-
-点击访问：[https://tanghanf.github.io/project_record_book/](https://tanghanf.github.io/project_record_book/)
-
 ------
 
-# GitHub地址
+# 项目地址
+
+本项目已同步推送至Gitee平台，不过仍将Github作为主推送平台。
 
 **请以GitHub上的project_record_book项目为准，Gitee上的project_record_book可能更新不及时**
 
-[参考地址：https://github.com/TangHanF/project_record_book](https://github.com/TangHanF/project_record_book)
 
+- GitHub：[https://github.com/TangHanF/project_record_book](https://github.com/TangHanF/project_record_book)
+
+- Gitee：[https://gitee.com/TangHanF/project_record_book](https://gitee.com/TangHanF/project_record_book)
+
+> 如果感觉GitHub访问太慢，可以切换到Gitee
 ------
 
+
+# 在线访问
+
+- 点击访问（Github）：[https://tanghanf.github.io/project_record_book/](https://tanghanf.github.io/project_record_book/)
+- 点击访问（Gitee，速度快）：[http://tanghanf.gitee.io/project_record_book](http://tanghanf.gitee.io/project_record_book)
+-----
 **说明**
 
 - 没有什么特殊说明，完全根据自己开发中遇到的问题进行整理
@@ -72,13 +80,7 @@ Gitbook项目。
 
 > 我们本着知识共享的目的，分享精神财富。部分文章或者片段可能来源于网络收集，如有侵权，请联系[guofu_gh@163.com](mailto:guofu_gh@163.com)删除！并无恶意，请谅解！🤝
 
-------
 
-**每个页面下面都有一个打赏功能，如果您觉得不错还望支持一下 😆**
-
-**每个页面下面都有一个打赏功能，如果您觉得不错还望支持一下 😆**
-
-**每个页面下面都有一个打赏功能，如果您觉得不错还望支持一下 😆**
 
 ------
 
@@ -126,6 +128,14 @@ gitbook serve
 ```
 
 
+------
 
+**每个页面下面都有一个打赏功能，如果您觉得不错还望支持一下 😆**
+
+**每个页面下面都有一个打赏功能，如果您觉得不错还望支持一下 😆**
+
+**每个页面下面都有一个打赏功能，如果您觉得不错还望支持一下 😆**
+
+----
 
 **分享快乐，祝你快乐！！**

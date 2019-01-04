@@ -28,6 +28,15 @@
             * 转换处理类
                 * [Java 递归处理文件夹](md/Java递归处理文件夹.md)
                 * [Java 万年历 计算月天数等](md/Java万年历、计算月天数等.md)
+                * [Java 金额格式化](md/Java金额格式化.md)
+                * [Java 实现替换占位符操作](md/Java实现替换占位符操作.md)
+                * [Java 字节数组分割](md/Java字节数组分割.md)
+                * [Java 去空格](md/Java去空格.md)
+                * [Java 经纬度测距](md/Java经纬度测距.md)
+                * [Java 毫秒数转时间](md/Java毫秒数转时间.md)
+                * [Java 将15位身份证号转化为18位返回，非15位身份证号原值返回](md/Java身份证号转换.md)
+                * [Java 根据长度描述动态分割字符串](md/Java动态分割字符串.md)
+                * [Java 打印十六进制数据](md/Java打印十六进制数据.md)
             * 获取设置类
                 * [获取jar包所在路径](md/获取jar包所在路径.md)
             * 计算类
@@ -128,6 +137,9 @@
         * [Mac相关总结](md/Mac相关总结.md)
     * Android
         * [adb使用总结](md/adb使用总结.md)
+    * Linux
+        * 问题解决
+            * [Linux每次开机都要source profile的解决办法](md/Linux每次开机都要source profile的解决办法.md)
 
 -----
 * 其它

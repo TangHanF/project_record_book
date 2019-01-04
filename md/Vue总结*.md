@@ -38,7 +38,7 @@ var app = new Vue(options);
 
 其中options是一些Vue的操作对象，基本的属性有：
 
-* **el**：受Vue控制的生效范围的根元素选择器，例如：“\#app”
+* **el**：受Vue控制的生效范围的根元素选择器，例如：“#app”
 * **data**：Model数据模型
 * **method：**定义的方法
 * **computed：**计算方法
@@ -524,14 +524,14 @@ new Vue({
 
  通过一种积木式累积组件，构建一个灵活的页面。
 
- 在之后的Vue生态中，Vue文件(\*.vue)就可视为一个组件，平时开发中我们利用简单的Vue功能，使用局部注册组件或者全局注册组件即可。
+ 在之后的Vue生态中，Vue文件(*.vue)就可视为一个组件，平时开发中我们利用简单的Vue功能，使用局部注册组件或者全局注册组件即可。
 
 四、插槽-slot
 =========
 
 插槽内可以包含任何内容，例如： 文本、HTML、组件等。
 
-如果定义的组件没有slot插槽，那么插入的数据将会自动舍弃，假定现在有一个\<nav-link url="\#"\>\</nav-link\>的插槽，正常情况下只定义了一个url的prop属性，没有定义插槽，此时如果我们这么使用：
+如果定义的组件没有slot插槽，那么插入的数据将会自动舍弃，假定现在有一个<nav-link url="#"></nav-link>的插槽，正常情况下只定义了一个url的prop属性，没有定义插槽，此时如果我们这么使用：
 
 ```js
 <nav-link url="#">百度一下</nav-link>
@@ -542,7 +542,7 @@ new Vue({
 4.1 普通插槽
 --------
 
-**\<slot\>\</slot\>**
+**<slot></slot>**
 
 ```js
 Vue.component('navigation-link', {
@@ -571,7 +571,7 @@ Vue.component('navigation-link', {
 4.2 具名插槽
 --------
 
-**\<slot name="插槽名称****"****\>\</slot\>**
+**<slot name="插槽名称****"****></slot>**
 
 ```js
 Vue.component('base-layout',{
@@ -774,7 +774,7 @@ export default router
 5.4 命名视图
 --------
 
-一般一个页面有一个\<router-view\>\</router-view\>路由出口，路由匹配到的组件将会渲染在此处。当有
+一般一个页面有一个<router-view></router-view>路由出口，路由匹配到的组件将会渲染在此处。当有
 
 5.5 编程式导航
 ---------
@@ -910,10 +910,10 @@ const app = new Vue({
 
  npm run dev
 
-9.4 当一个页面存在多个\<router-view\>的处理
+9.4 当一个页面存在多个router-view的处理
 -------------------------------
 
-我们知道，多数情况下，一个页面内存在一个\<router-view\>，但是有时候我们想同级显示，此时为了让Vue知道到底去渲染哪一个视图，就需要我们为\<router-view\>视图起一个名字以示区分。
+我们知道，多数情况下，一个页面内存在一个router-view，但是有时候我们想同级显示，此时为了让Vue知道到底去渲染哪一个视图，就需要我们为router-view视图起一个名字以示区分。
 
 ```html
 <router-view></router-view>
