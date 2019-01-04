@@ -171,7 +171,10 @@
         * [为Layui的Tab选项卡增加关闭当前、关闭其它操作](md/为Layui的Tab选项卡增加关闭当前、关闭其它操作.md)
         * [【更新】为Layui的Tab选项卡增加关闭当前、关闭其它操作](md/【更新】为Layui的Tab选项卡增加关闭当前、关闭其它操作.md)
     * Vue
-        * [Vue内容](md/Vue内容.md)
+        * 总结篇
+            * [Vue知识点整理](md/Vue知识点整理.md)
+            * [Vue开发细节总结](md/Vue开发细节总结.md)
+            * [Vue总结*](md/Vue总结*.md)
     * WebPack代码重构个人总结.md
         * 问题解决
             * [Component template should contain exactly one root](md/Component template should contain exactly one root.md)
