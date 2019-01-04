@@ -1,9 +1,8 @@
 # Summary
 
-## * 简介
-* [Introduction](README.md)
-* 编程语言
-    * C#
+* [简介](README.md)
+* 编程开发
+    * CSharp
         * VSTO
             * 问题解决
                 * [使用VS创建VSTO项目常见错误](md/使用VS创建VSTO项目常见错误.md)
@@ -16,14 +15,14 @@
             * [VSTO个人开发总结](md/VSTO个人开发总结.md)
         * 控件总结
             * Chart图表
-                * [C# Chart控件:chart、Series、ChartArea曲线图绘制的重要属性](md/CSharp Chart控件:chart、Series、ChartArea曲线图绘制的重要属性.md)
+                * [CSharp Chart控件:chart、Series、ChartArea曲线图绘制的重要属性](md/CSharp Chart控件:chart、Series、ChartArea曲线图绘制的重要属性.md)
                 * [Chart图表基本模型](md/Chart图表基本模型.md)
                 * [Chart图表总结](md/Chart图表总结.md)
             * DataGirdView
-                * [【个人总结】C# DataGirdView相关总结](md/【个人总结】DataGirdView相关总结.md)
-            * [C# 动态创建控件](md/动态创建控件.md)
+                * [【个人总结】CSharp DataGirdView相关总结](md/【个人总结】DataGirdView相关总结.md)
+            * [CSharp 动态创建控件](md/动态创建控件.md)
         * 实用代码
-            * [C# 多线程配合委托实现控件的控制](md/Csharp多线程配合委托实现控件的控制.md)
+            * [CSharp 多线程配合委托实现控件的控制](md/Csharp多线程配合委托实现控件的控制.md)
     * Java
         * 实用代码
             * 转换处理类
@@ -36,6 +35,7 @@
             * 判断类
                 * [Java 判断操作系统类型](md/Java判断操作系统类型.md)
             * IO操作类
+                * [IO操作类](md/IO操作类.md)
         * MyBatis
             * [mybatis判断用insert还是update](md/mybatis判断用insert还是update.md)
             * [mybatis一次执行多条SQL语句](md/mybatis一次执行多条SQL语句.md)
@@ -56,11 +56,19 @@
         * [利用requests库下载西瓜视频实践](md/利用requests库下载西瓜视频实践.md)
         * 实用代码
             * [Python 使用迭代器读取文件](md/Python使用迭代器读取文件.md)
+    * 微信小程序开发
+        * mpvue
+            * [mpvue 待有志人士完善](md/mpvue 待有志人士完善.md)
+        * [微信小程序待有志人士完善](md/微信小程序待有志人士完善.md)
+    * Flask
+        * [Flask 待有志人士完善](md/Flask 待有志人士完善.md)
 
 -----
 * 操作系统相关
     * Mac
         * 保养类
+            * [Mac电池保养1](md/Mac电池保养1.md)
+            * [Mac电池保养2](md/Mac电池保养2.md)
         * 实用操作
             * [几条简单命令，也能保护你的 Mac](md/几条简单命令也能保护你的Mac.md)
             * [MAC 常见问题解决](md/MAC常见问题解决.md)
@@ -88,31 +96,31 @@
             * Safari
                 * [Mac 加速浏览器访问GitHub速度](md/Mac加速浏览器访问GitHub速度.md)
         * 实用操作
-            * [Mac 磁盘分区](md/Mac 磁盘分区.md)
-            * [Mac 配置Maven环境变量](md/Mac 配置Maven环境变量.md)
-            * [Mac 为应用程序添加自定义快捷键](md/Mac 为应用程序添加自定义快捷键.md)
-            * [Mac强制退出应用的六种方式](md/Mac 强制退出应用的六种方式.md)
+            * [Mac 磁盘分区](md/Mac磁盘分区.md)
+            * [Mac 配置Maven环境变量](md/Mac配置Maven环境变量.md)
+            * [Mac 为应用程序添加自定义快捷键](md/Mac为应用程序添加自定义快捷键.md)
+            * [Mac强制退出应用的六种方式](md/Mac强制退出应用的六种方式.md)
             * [mac下安装wget命令](md/mac下安装wget命令.md)
             * [Mac下使用tree命令](md/Mac下使用tree命令.md)
             * [MAC应用无法打开或文件损坏的处理方法](md/MAC应用无法打开或文件损坏的处理方法.md)
         * 问题解决
-            * [Mac 每次都要执行source bash_profile 配置的环境变量才生效](md/Mac 每次都要执行source bash_profile 配置的环境变量才生效.md)
+            * [Mac 每次都要执行source bash_profile 配置的环境变量才生效](md/Mac每次都要执行source_bash_profile配置的环境变量才生效.md)
         * AppleScript
             * [AppleScript脚本入门](md/AppleScript脚本入门.md)
             * [AppleScript总结](md/AppleScript总结.md)
         * Mac软件安装
             * [Mac Navicat12破解](md/Mac Navicat12破解.md)
             * [安装HomeBrew](md/安装HomeBrew.md)
-            * [苹果Mac安装Win10教程 BootCamp安装win10教程](md/苹果Mac安装Win10教程 BootCamp安装win10教程.md)
+            * [苹果Mac安装Win10教程 BootCamp安装win10教程](md/苹果Mac安装Win10教程_BootCamp安装win10教程.md)
             * [IINA播放器](md/IINA播放器.md)
-            * [Mac 安装adb 以及基本的命令](md/Mac 安装adb 以及基本的命令.md)
-            * [Mac 安装NodeJS](md/Mac 安装NodeJS.md)
+            * [Mac 安装adb 以及基本的命令](md/Mac安装adb以及基本的命令.md)
+            * [Mac 安装NodeJS](md/Mac安装NodeJS.md)
             * [Mac MySql的root密码重置](md/Mac MySql的root密码重置.md)
-            * [Mac OS 终端利器 iTerm2](md/Mac OS 终端利器 iTerm2.md)
+            * [Mac OS 终端利器 iTerm2](md/MacOS终端利器iTerm2.md)
             * [Mac安装MySQL](md/Mac安装MySQL.md)
             * [Mac卸载JDK](md/Mac卸载JDK.md)
-            * [macOS 10.13安装u盘制作教程 macOS 10.13安装u盘制作方法](md/macOS 10.13安装u盘制作教程 macOS 10.13安装u盘制作方法.md)
-            * [SmartSVN安装破解 for mac](md/SmartSVN安装破解 for mac.md)
+            * [macOS 10.13安装u盘制作教程 macOS 10.13安装u盘制作方法](md/macOS 10.13安装u盘制作教程_macOS 10.13安装u盘制作方法.md)
+            * [SmartSVN安装破解 for mac](md/SmartSVN安装破解_for_mac.md)
         * [Mac Linux命令总结](md/Mac Linux命令总结.md)
         * [Mac技巧-知乎](md/Mac技巧-知乎.md)
         * [Mac忘记root密码处理方式](md/Mac忘记root密码处理方式.md)
@@ -133,6 +141,7 @@
         * [adb shell详细命令](md/adb shell详细命令.md)
     * HTTPS
         * [理解HTTPS](md/理解HTTPS.md)
+
 -----
 * 前端
     * AngularJS
@@ -155,7 +164,7 @@
         * [JavaScript判断字符串长度](md/JavaScript判断字符串长度.md)
         * [JavaScript for循环的in和of](md/JavaScript for循环的in和of.md)
     * jQuery
-        * [jQuery版本问题 msie 报错](md/jQuery版本问题 msie 报错.md)
+        * [jQuery版本问题 msie 报错](md/jQuery版本问题msie报错.md)
     * LayUI
         * [Layui开发过程随笔记录](md/Layui开发过程随笔记录.md)
         * [LayUI之table数据表格获取行、行高亮等相关操作](md/LayUI之table数据表格获取行、行高亮等相关操作.md)
@@ -166,7 +175,7 @@
     * WebPack代码重构个人总结.md
         * 问题解决
             * [Component template should contain exactly one root](md/Component template should contain exactly one root.md)
-            * [npm run build 打包后，如何运行在本地查看效果](md/npm run build打包后 如何运行在本地查看效果.md)
+            * [npm run build 打包后，如何运行在本地查看效果](md/npm_run_build打包后如何运行在本地查看效果.md)
             * [vue-cli项目webpack打包后iconfont文件路径问题解决](md/vue-cli项目webpack打包后iconfont文件路径问题解决.md)
             * [WebPack打包时对于部分字体放置问题](md/WebPack打包时对于部分字体放置问题.md)
         * [WebPack总结](md/WebPack总结.md)

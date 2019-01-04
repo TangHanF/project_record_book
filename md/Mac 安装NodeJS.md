@@ -1,2 +1,2 @@
-# Mac 安装NodeJS.md
+# Mac 安装NodeJS
 

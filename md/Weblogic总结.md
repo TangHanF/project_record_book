@@ -1,2 +1,2 @@
-# Weblogic总结.md
+# Weblogic总结
 

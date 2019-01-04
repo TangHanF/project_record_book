@@ -1,8 +1,8 @@
 {
     "gitbook": "3.2.3",
-    "title": "API手册",
+    "title": "IT人员资料收集册",
     "description": "",
-    "author": "郭富",
+    "author": "TangHanF（Mr.Guo）",
     "language": "zh-hans",
     "links": {
         "sidebar": {
@@ -16,7 +16,8 @@
         "-sharing",
         "sharing-plus",
         "-highlight",
-        "prism"
+        "prism",
+        "expandable-chapters"
     ],
     "pluginsConfig": {
         "sharing": {
@@ -45,12 +46,12 @@
             ]
         },
         "github": {
-            "url": "https://github.com/TangHanF"
+            "url": "https://github.com/TangHanF/project_record_book"
         },
         "donate": {
             "wechat": "https://ws1.sinaimg.cn/large/006tNc79ly1fyuhuyhvzaj30tz14qtbc.jpg",
             "title": "",
-            "button": "打赏一下下",
+            "button": "打赏一下",
             "wechatText": "微信打赏"
         },
         "anchor-navigation-ex": {

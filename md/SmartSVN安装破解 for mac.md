@@ -1,2 +1,2 @@
-# SmartSVN安装破解 for mac.md
+# SmartSVN安装破解 for mac
 
