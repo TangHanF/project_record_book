@@ -48,13 +48,37 @@ git fetch upstream
 git merge upstream/master
 ```
 
-## 6、将本地仓库推送到远程仓库
+## 6、修改、新增笔记
+
+> - 现在您本地的项目已是最新版，您可以对现有笔记进行审阅，发现问题可先[邮件联系我](mailto:guofu_gh@163.com)或者自行修改然后发起pull request。
+> 
+> - 如果您是新增笔记，请先明确自己要发布笔记所属的版块，例如是在：**编程开发/Java/实用代码/判断类** 中新建一篇名为"Java判断闰年"的笔记，请执行如下操作：
+
+### 1) 修改`SUMMARY.md`目录结构
+
+![](https://ws3.sinaimg.cn/large/006tNc79ly1fyvsc545enj30zm0kiatk.jpg)
+
+### 2) 执行`gitbook init`命令
+
+> 因为上面已经对 `SUMMARY.md`做了修改，此时执行`gitbook init`就回在`md`文件夹下自动创建`Java判断闰年.md`的MarkDown文件
+
+### 3) 编辑对应笔记内容
+
+> 此时您就可以完善自己的笔记了，最后分享给大家！
+
+### 4) 添加、提交您的更改
+
+- git add 命令
+
+- git commit 命令
+
+## 7、将本地仓库推送到远程仓库
 
 ```bash
 git push origin master
 ```
 
-## 7、发起pull request
+## 8、发起pull request
 
 ![](https://ws2.sinaimg.cn/large/006tNc79ly1fyv3b2v2gij31io0iygps.jpg)
 
