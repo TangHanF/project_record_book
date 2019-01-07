@@ -301,12 +301,12 @@ function studentController($scope) {
 
 现在，我们可以在studentController使用ng-model或表达式来获取学生的属性。
 
-
+```html
 Enter first name: <input type="text" ng-model="student.firstName"><br>
 Enter last name: <input type="text" ng-model="student.lastName"><br>
 <br>
-You are entering: {{student.fullName()}}
-
+You are entering: \{\{student.fullName()\}\}
+```
 
 - 绑定 student.firstName 和 student.lastname 两个输入框。
 - 绑定student.fileName()到HTML。
@@ -331,7 +331,7 @@ testAngularJS.html
 Enter first name: <input type="text" ng-model="student.firstName"><br><br>
 Enter last name: <input type="text" ng-model="student.lastName"><br>
 <br>
-您输入的名字是: {{student.fullName()}}
+您输入的名字是: \{\{student.fullName()\}\}
 </div>
 <script>
 var mainApp = angular.module("mainApp", []);
@@ -377,7 +377,7 @@ mainApp.controller('studentController', function($scope) {
 ```html
 Enter first name:<input type="text" ng-model="student.firstName">
 Enter last name: <input type="text" ng-model="student.lastName">
-Name in Upper Case: {{student.fullName() | uppercase}}
+Name in Upper Case: \{\{student.fullName() | uppercase\}\}
 ```
 
 ## 小写过滤器
@@ -387,7 +387,7 @@ Name in Upper Case: {{student.fullName() | uppercase}}
 ```html
 Enter first name:<input type="text" ng-model="student.firstName">
 Enter last name: <input type="text" ng-model="student.lastName">
-Name in Upper Case: {{student.fullName() | lowercase}}
+Name in Upper Case: \{\{student.fullName() | lowercase\}\}
 ```
 
 ## 货币过滤器
@@ -396,7 +396,7 @@ Name in Upper Case: {{student.fullName() | lowercase}}
 
 ```html
 Enter fees: <input type="text" ng-model="student.fees">
-fees: {{student.fees | currency}}
+fees: \{\{student.fees | currency\}\}
 ```
 
 ## 过滤过滤器
