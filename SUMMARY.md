@@ -76,9 +76,9 @@
     * 微信小程序开发
         * mpvue
             * [mpvue 待有志人士完善](md/mpvue 待有志人士完善.md)
+            * [mpvue使用遇到的问题](md/mpvue使用遇到的问题.md)
         * 微信小程序开发总结
         * [微信小程序待有志人士完善](md/微信小程序待有志人士完善.md)
-        * [mpvue使用遇到的问题](md/mpvue使用遇到的问题.md)
     * Flask
         * [Flask 待有志人士完善](md/Flask 待有志人士完善.md)
 
