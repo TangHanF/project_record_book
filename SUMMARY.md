@@ -217,6 +217,8 @@
 
 -----
 * 工具使用
+    * IDEA
+        * [IDEA统一设置规范](md/IDEA统一设置规范.md)
     * Git
         * [Git 总结篇](md/Git 总结篇.md)
         * [Git 常用命令清单](md/Git 常用命令清单.md)
