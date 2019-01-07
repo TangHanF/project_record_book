@@ -85,11 +85,3 @@ git merge upstream/master
 ```bash
 git push origin master
 ```
-
-## 8、发起pull request
-
-![](https://ws2.sinaimg.cn/large/006tNc79ly1fyv3b2v2gij31io0iygps.jpg)
-
-![](https://ws2.sinaimg.cn/large/006tNc79ly1fyv3cs0z08j317g0u0doo.jpg)
-
-![](https://ws4.sinaimg.cn/large/006tNc79ly1fyv3dtbopbj31680u0q8p.jpg)
