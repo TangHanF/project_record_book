@@ -60,7 +60,7 @@ git merge upstream/master
 
 ### 2) 执行`gitbook init`命令
 
-> 因为上面已经对 `SUMMARY.md`做了修改，此时执行`gitbook init`就回在`md`文件夹下自动创建`Java判断闰年.md`的MarkDown文件
+> 因为上面已经对 `SUMMARY.md`做了修改，此时执行`gitbook init`就会在`md`文件夹下自动创建`Java判断闰年.md`的MarkDown文件
 
 ### 3) 编辑对应笔记内容
 
