@@ -23,6 +23,7 @@ Gitbook项目。
 > 如果感觉GitHub访问太慢，可以切换到Gitee
 ------
 
+![](https://ws4.sinaimg.cn/large/006tNc79ly1fyxsu4e3m2j31lw0u0qbi.jpg)
 
 # 在线访问
 
