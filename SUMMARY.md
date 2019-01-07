@@ -181,8 +181,16 @@
     * iView
         * [iView组件映射](md/iView组件映射.md)
     * JavaScript
-        * [JavaScript判断字符串长度](md/JavaScript判断字符串长度.md)
-        * [JavaScript for循环的in和of](md/JavaScript for循环的in和of.md)
+        * 总结
+            * [JavaScript for循环的in和of](md/JavaScript for循环的in和of.md)
+        * 实用代码
+            * 判断类
+                * [JavaScript判断字符串长度](md/JavaScript判断字符串长度.md)
+            * 处理类
+                * [JavaScript Ajax封装](md/JavaScript Ajax封装.md)
+                * [JavaScript 创建页面目录树、大纲、导航](md/JavaScript创建页面目录树、大纲、导航.md)
+                * [JavaScript 好用的数组查找方法](md/JavaScript好用的数组查找方法.md)
+                * [JavaScript 占位符处理 替换 格式化](md/JavaScript占位符处理、替换、格式化.md)
     * jQuery
         * [jQuery版本问题 msie 报错](md/jQuery版本问题msie报错.md)
     * LayUI
