@@ -78,6 +78,7 @@
             * [mpvue 待有志人士完善](md/mpvue 待有志人士完善.md)
         * 微信小程序开发总结
         * [微信小程序待有志人士完善](md/微信小程序待有志人士完善.md)
+        * [mpvue使用遇到的问题](md/mpvue使用遇到的问题.md)
     * Flask
         * [Flask 待有志人士完善](md/Flask 待有志人士完善.md)
 
@@ -132,7 +133,7 @@
         * [【可行】vue-cli+webpack在生成的项目中使用bootstrap的方法](md/【可行】vue-cli+webpack在生成的项目中使用bootstrap的方法.md)
         * [Webpack 3.x 通过PurifyCSS Plugin按需加载bootstrap css样式](md/Webpack 3.x通过Purify CSS Plugin按需加载bootstrap css样式.md)
     * [前端编码规范](md/前端编码规范.md)
-    
+
 -----
 * 操作系统相关
     * Mac
@@ -214,8 +215,6 @@
         * [adb shell详细命令](md/adb shell详细命令.md)
     * HTTPS
         * [理解HTTPS](md/理解HTTPS.md)
-
-
 
 -----
 * 组件
