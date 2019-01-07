@@ -42,6 +42,8 @@ git remote add upstream https://github.com/TangHanF/project_record_book.git
 
 ![](https://ws3.sinaimg.cn/large/006tNc79ly1fyv34so6jej30u804e40o.jpg)
 
+> **注意：** 请保证`upstream`地址是 https://github.com/TangHanF/project_record_book.git ，不然无法保持项目内容最新版！
+
 ## 4、fetch源分支的新版本到本地
 
 ```bash
@@ -83,6 +85,8 @@ git merge upstream/master
 ```bash
 git push origin master
 ```
+
+
 
 ## 8、发起pull request
 
