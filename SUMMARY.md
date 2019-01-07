@@ -76,6 +76,7 @@
     * 微信小程序开发
         * mpvue
             * [mpvue 待有志人士完善](md/mpvue 待有志人士完善.md)
+            * [mpvue使用遇到的问题](md/mpvue使用遇到的问题.md)
         * 微信小程序开发总结
         * [微信小程序待有志人士完善](md/微信小程序待有志人士完善.md)
     * Flask
@@ -216,7 +217,6 @@
         * [adb shell详细命令](md/adb shell详细命令.md)
     * HTTPS
         * [理解HTTPS](md/理解HTTPS.md)
-
 -----
 * 工具使用
     * IDEA
@@ -224,7 +224,6 @@
     * Git
         * [Git 总结篇](md/Git 总结篇.md)
         * [Git 常用命令清单](md/Git 常用命令清单.md)
-
 -----
 * 组件
     * Nginx
