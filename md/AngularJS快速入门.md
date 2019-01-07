@@ -301,12 +301,12 @@ function studentController($scope) {
 
 现在，我们可以在studentController使用ng-model或表达式来获取学生的属性。
 
-```html
+
 Enter first name: <input type="text" ng-model="student.firstName"><br>
 Enter last name: <input type="text" ng-model="student.lastName"><br>
 <br>
 You are entering: {{student.fullName()}}
-```
+
 
 - 绑定 student.firstName 和 student.lastname 两个输入框。
 - 绑定student.fileName()到HTML。

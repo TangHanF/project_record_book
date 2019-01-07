@@ -82,6 +82,59 @@
         * [Flask 待有志人士完善](md/Flask 待有志人士完善.md)
 
 -----
+* 前端
+    * AngularJS
+        * [AngularJS简介](md/AngularJS简介.md)
+        * [AngularJS快速入门](md/AngularJS快速入门.md)
+        * [AngularJS环境配置](md/AngularJS环境配置.md)
+        * [AngularJS MVC体系结构](md/AngularJS MVC体系结构.md)
+    * BootStrap
+        * [BootStrap初步学习总结](md/BootStrap初步学习总结.md)
+        * [BootStrap问题解决总结](md/BootStrap问题解决总结.md)
+    * CSS
+        * [CSS清除浮动的三种方式](md/CSS清除浮动的三种方式.md)
+        * [深入理解css中position属性及z-index属性](md/深入理解css中position属性及z-index属性.md)
+        * [CSS进行水平居中、垂直居中的常用方法](md/CSS进行水平居中、垂直居中的常用方法.md)
+    * ES6
+        * [ES6总结](md/ES6总结.md)
+    * iView
+        * [iView组件映射](md/iView组件映射.md)
+    * JavaScript
+        * 总结
+            * [JavaScript for循环的in和of](md/JavaScript for循环的in和of.md)
+        * 实用代码
+            * 判断类
+                * [JavaScript判断字符串长度](md/JavaScript判断字符串长度.md)
+            * 处理类
+                * [JavaScript Ajax封装](md/JavaScript Ajax封装.md)
+                * [JavaScript 创建页面目录树、大纲、导航](md/JavaScript创建页面目录树、大纲、导航.md)
+                * [JavaScript 好用的数组查找方法](md/JavaScript好用的数组查找方法.md)
+                * [JavaScript 占位符处理 替换 格式化](md/JavaScript占位符处理、替换、格式化.md)
+    * jQuery
+        * [jQuery版本问题 msie 报错](md/jQuery版本问题msie报错.md)
+    * LayUI
+        * [Layui开发过程随笔记录](md/Layui开发过程随笔记录.md)
+        * [LayUI之table数据表格获取行、行高亮等相关操作](md/LayUI之table数据表格获取行、行高亮等相关操作.md)
+        * [为Layui的Tab选项卡增加关闭当前、关闭其它操作](md/为Layui的Tab选项卡增加关闭当前、关闭其它操作.md)
+        * [【更新】为Layui的Tab选项卡增加关闭当前、关闭其它操作](md/【更新】为Layui的Tab选项卡增加关闭当前、关闭其它操作.md)
+        * [Layui编写扩展模块的代码模板](md/Layui编写扩展模块的代码模板.md)
+    * Vue
+        * 总结篇
+            * [Vue知识点整理](md/Vue知识点整理.md)
+            * [Vue开发细节总结](md/Vue开发细节总结.md)
+            * [Vue总结(重要)](md/Vue总结[重要].md)
+    * WebPack代码重构个人总结.md
+        * 问题解决
+            * [Component template should contain exactly one root](md/Component template should contain exactly one root.md)
+            * [npm run build 打包后，如何运行在本地查看效果](md/npm_run_build打包后如何运行在本地查看效果.md)
+            * [vue-cli项目webpack打包后iconfont文件路径问题解决](md/vue-cli项目webpack打包后iconfont文件路径问题解决.md)
+            * [WebPack打包时对于部分字体放置问题](md/WebPack打包时对于部分字体放置问题.md)
+        * [WebPack总结](md/WebPack总结.md)
+        * [【可行】vue-cli+webpack在生成的项目中使用bootstrap的方法](md/【可行】vue-cli+webpack在生成的项目中使用bootstrap的方法.md)
+        * [Webpack 3.x 通过PurifyCSS Plugin按需加载bootstrap css样式](md/Webpack 3.x通过Purify CSS Plugin按需加载bootstrap css样式.md)
+    * [前端编码规范](md/前端编码规范.md)
+    
+-----
 * 操作系统相关
     * Mac
         * 保养类
@@ -163,58 +216,7 @@
     * HTTPS
         * [理解HTTPS](md/理解HTTPS.md)
 
------
-* 前端
-    * AngularJS
-        * [AngularJS简介](md/AngularJS简介.md)
-        * [AngularJS快速入门](md/AngularJS快速入门.md)
-        * [AngularJS环境配置](md/AngularJS环境配置.md)
-        * [AngularJS MVC体系结构](md/AngularJS MVC体系结构.md)
-    * BootStrap
-        * [BootStrap初步学习总结](md/BootStrap初步学习总结.md)
-        * [BootStrap问题解决总结](md/BootStrap问题解决总结.md)
-    * CSS
-        * [CSS清除浮动的三种方式](md/CSS清除浮动的三种方式.md)
-        * [深入理解css中position属性及z-index属性](md/深入理解css中position属性及z-index属性.md)
-        * [CSS进行水平居中、垂直居中的常用方法](md/CSS进行水平居中、垂直居中的常用方法.md)
-    * ES6
-        * [ES6总结](md/ES6总结.md)
-    * iView
-        * [iView组件映射](md/iView组件映射.md)
-    * JavaScript
-        * 总结
-            * [JavaScript for循环的in和of](md/JavaScript for循环的in和of.md)
-        * 实用代码
-            * 判断类
-                * [JavaScript判断字符串长度](md/JavaScript判断字符串长度.md)
-            * 处理类
-                * [JavaScript Ajax封装](md/JavaScript Ajax封装.md)
-                * [JavaScript 创建页面目录树、大纲、导航](md/JavaScript创建页面目录树、大纲、导航.md)
-                * [JavaScript 好用的数组查找方法](md/JavaScript好用的数组查找方法.md)
-                * [JavaScript 占位符处理 替换 格式化](md/JavaScript占位符处理、替换、格式化.md)
-    * jQuery
-        * [jQuery版本问题 msie 报错](md/jQuery版本问题msie报错.md)
-    * LayUI
-        * [Layui开发过程随笔记录](md/Layui开发过程随笔记录.md)
-        * [LayUI之table数据表格获取行、行高亮等相关操作](md/LayUI之table数据表格获取行、行高亮等相关操作.md)
-        * [为Layui的Tab选项卡增加关闭当前、关闭其它操作](md/为Layui的Tab选项卡增加关闭当前、关闭其它操作.md)
-        * [【更新】为Layui的Tab选项卡增加关闭当前、关闭其它操作](md/【更新】为Layui的Tab选项卡增加关闭当前、关闭其它操作.md)
-        * [Layui编写扩展模块的代码模板](md/Layui编写扩展模块的代码模板.md)
-    * Vue
-        * 总结篇
-            * [Vue知识点整理](md/Vue知识点整理.md)
-            * [Vue开发细节总结](md/Vue开发细节总结.md)
-            * [Vue总结(重要)](md/Vue总结[重要].md)
-    * WebPack代码重构个人总结.md
-        * 问题解决
-            * [Component template should contain exactly one root](md/Component template should contain exactly one root.md)
-            * [npm run build 打包后，如何运行在本地查看效果](md/npm_run_build打包后如何运行在本地查看效果.md)
-            * [vue-cli项目webpack打包后iconfont文件路径问题解决](md/vue-cli项目webpack打包后iconfont文件路径问题解决.md)
-            * [WebPack打包时对于部分字体放置问题](md/WebPack打包时对于部分字体放置问题.md)
-        * [WebPack总结](md/WebPack总结.md)
-        * [【可行】vue-cli+webpack在生成的项目中使用bootstrap的方法](md/【可行】vue-cli+webpack在生成的项目中使用bootstrap的方法.md)
-        * [Webpack 3.x 通过PurifyCSS Plugin按需加载bootstrap css样式](md/Webpack 3.x通过Purify CSS Plugin按需加载bootstrap css样式.md)
-    * [前端编码规范](md/前端编码规范.md)
+
 
 -----
 * 组件
