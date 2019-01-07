@@ -85,7 +85,6 @@
 * 前端
     * AngularJS
         * [AngularJS简介](md/AngularJS简介.md)
-        * [AngularJS快速入门](md/AngularJS快速入门.md)
         * [AngularJS环境配置](md/AngularJS环境配置.md)
         * [AngularJS MVC体系结构](md/AngularJS MVC体系结构.md)
     * BootStrap
