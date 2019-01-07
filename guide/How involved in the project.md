@@ -4,6 +4,12 @@
 >
 > 有很多人对Git、Github的使用不是很熟悉，不知道如何参与到项目中。下面将就如何参与到本项目，为知识库添砖加瓦做出指导性说明：
 
+-----
+> - 假定现在你的电脑中已经安装了git，如果尚未安装请百度一下安装方法。
+> - 假定安装NodeJS已经安装
+> - 假定gitbook-cli等已安装（参考README.md或者《简介》中"本地部署方式"一节说明）
+
+
 ## 1、Fork本项目
 
 > 首先从Github上找到该项目，然后Fork该项目到你自己的仓库中
@@ -60,7 +66,7 @@ git merge upstream/master
 
 ### 2) 执行`gitbook init`命令
 
-> 因为上面已经对 `SUMMARY.md`做了修改，此时执行`gitbook init`就回在`md`文件夹下自动创建`Java判断闰年.md`的MarkDown文件
+> 因为上面已经对 `SUMMARY.md`做了修改，此时执行`gitbook init`就会在`md`文件夹下自动创建`Java判断闰年.md`的MarkDown文件
 
 ### 3) 编辑对应笔记内容
 

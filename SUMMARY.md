@@ -6,6 +6,8 @@
     * [Windows下安装NodeJS](guide/install nodejs for pc.md)
     * [Linux下安装NodeJS](guide/install nodejs for linux.md)
     * [MacOS下安装NodeJS](guide/install nodejs for mac.md)
+
+-----
 * 编程开发
     * CSharp
         * VSTO
@@ -74,6 +76,7 @@
     * 微信小程序开发
         * mpvue
             * [mpvue 待有志人士完善](md/mpvue 待有志人士完善.md)
+        * 微信小程序开发总结
         * [微信小程序待有志人士完善](md/微信小程序待有志人士完善.md)
     * Flask
         * [Flask 待有志人士完善](md/Flask 待有志人士完善.md)
@@ -179,8 +182,16 @@
     * iView
         * [iView组件映射](md/iView组件映射.md)
     * JavaScript
-        * [JavaScript判断字符串长度](md/JavaScript判断字符串长度.md)
-        * [JavaScript for循环的in和of](md/JavaScript for循环的in和of.md)
+        * 总结
+            * [JavaScript for循环的in和of](md/JavaScript for循环的in和of.md)
+        * 实用代码
+            * 判断类
+                * [JavaScript判断字符串长度](md/JavaScript判断字符串长度.md)
+            * 处理类
+                * [JavaScript Ajax封装](md/JavaScript Ajax封装.md)
+                * [JavaScript 创建页面目录树、大纲、导航](md/JavaScript创建页面目录树、大纲、导航.md)
+                * [JavaScript 好用的数组查找方法](md/JavaScript好用的数组查找方法.md)
+                * [JavaScript 占位符处理 替换 格式化](md/JavaScript占位符处理、替换、格式化.md)
     * jQuery
         * [jQuery版本问题 msie 报错](md/jQuery版本问题msie报错.md)
     * LayUI
@@ -188,6 +199,7 @@
         * [LayUI之table数据表格获取行、行高亮等相关操作](md/LayUI之table数据表格获取行、行高亮等相关操作.md)
         * [为Layui的Tab选项卡增加关闭当前、关闭其它操作](md/为Layui的Tab选项卡增加关闭当前、关闭其它操作.md)
         * [【更新】为Layui的Tab选项卡增加关闭当前、关闭其它操作](md/【更新】为Layui的Tab选项卡增加关闭当前、关闭其它操作.md)
+        * [Layui编写扩展模块的代码模板](md/Layui编写扩展模块的代码模板.md)
     * Vue
         * 总结篇
             * [Vue知识点整理](md/Vue知识点整理.md)
