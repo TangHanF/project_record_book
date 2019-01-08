@@ -228,6 +228,8 @@
         * [蒲公英访问者（for Linux）安装手册](md/蒲公英访问者（for Linux）安装手册.md)
     * Maven
         * [Maven 私服搭建和使用](md/Maven 私服搭建和使用.md)
+    * Quiver
+        * [Quiver 快速入门](md/Quiver 快速入门.md)
 
 -----
 * 组件
