@@ -216,6 +216,7 @@
         * [adb shell详细命令](md/adb shell详细命令.md)
     * HTTPS
         * [理解HTTPS](md/理解HTTPS.md)
+
 -----
 * 工具使用
     * IDEA
@@ -223,6 +224,13 @@
     * Git
         * [Git 总结篇](md/Git 总结篇.md)
         * [Git 常用命令清单](md/Git 常用命令清单.md)
+    * 蒲公英
+        * [蒲公英访问者（for Linux）安装手册](md/蒲公英访问者（for Linux）安装手册.md)
+    * Maven
+        * [Maven 私服搭建和使用](md/Maven 私服搭建和使用.md)
+    * Quiver
+        * [Quiver 快速入门](md/Quiver 快速入门.md)
+
 -----
 * 组件
     * Nginx
