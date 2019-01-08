@@ -4,9 +4,9 @@
 
 创建日期：2017-12-5
 
-# 一、注释模板
+# <font color='#ff0000'>一、注释模板</font>
 
-## 1）类注释
+## <font color='#ff0000'>1）类注释</font>
 
 ![img](https://ws4.sinaimg.cn/large/006tNc79ly1fyxyoc4tvoj30h90comxf.jpg)
 
@@ -16,47 +16,39 @@
 
 模板：
 
-**JavaScript**：
+**JavaScript头注释**：
 
-> /**
->
-> 功能描述：${END}
->
-> Created by GuoF on ${DATE}.
->
-> */
+``` javascript
+/**
+功能描述：${END}
+Created by 你的姓名全拼 on ${DATE}.
+*/
+```
 
-**Java**：
+**Java头注释**：
 
-> /**
->
-> *Title: <br>
->
-> *Packet:${PACKAGE_NAME}<br>
->
-> *Description: <br>
->
-> *Author:GuoFu<br>
->
-> *Create Date: ${DATE}.<br>
->
-> *Modify User: <br>
->
-> *Modify Date: <br>
->
-> *Modify Description: <br>
->
-> */
+``` javascript
+/**
+* Title: 
+* Packet:${PACKAGE_NAME}
+* Description: 
+* Author:你的姓名，建议姓名全拼。不要使用中文，避免乱码
+* Create Date: ${DATE}.
+* Modify User: 
+* Modify Date: 
+* Modify Description: 
+*/
+```
 
 **注意：**
 
-**1、姓名禁止使用昵称，内部开发，使用真实姓名**
+- **1、姓名禁止使用昵称，内部开发，使用真实姓名**
 
-**2、姓名统一使用拼音，防止中文乱码**
+- **2、姓名统一使用拼音，防止中文乱码**
 
-## 2）方法注释
+## <font color='#ff0000'>2）方法注释</font>
 
-设置方法：在方法名上一行输入：“/**”回车，自动生成JavaDoc注释规范，例如：
+设置方法：在方法名上一行输入：`/**` 回车，自动生成JavaDoc注释规范，例如：
 
 ![img](https://ws2.sinaimg.cn/large/006tNc79ly1fyxyonzj54j30eh05kglh.jpg)
 
@@ -64,9 +56,9 @@
 
 ![img](https://ws1.sinaimg.cn/large/006tNc79ly1fyxyopkfntj30p109emxh.jpg)
 
-## 3）字段注释
+## <font color='#ff0000'>3）字段注释</font>
 
-关键字段的注释建议使用块状注释，以便日后生成javadoc文档能自动生成字段注释
+关键字段的注释建议使用块状注释,快捷键同样是输入：`/**` 回车，以便日后生成javadoc文档能自动生成字段注释
 
 ![img](https://ws1.sinaimg.cn/large/006tNc79ly1fyxyopsdzhj3088039dfm.jpg)
 
@@ -82,9 +74,9 @@
 
 ![img](https://ws3.sinaimg.cn/large/006tNc79ly1fyxyow100qj30pk0jtjs3.jpg)
 
-# 三、注释缩进
+# <font color='#ff0000'>三、注释缩进</font>
 
-> IDEA注释的快捷键是Ctrl+/，但是默认注释是行首，一旦注释一多，看起来很别扭，例如：
+> IDEA注释的快捷键是 `Ctrl+/`，但是默认注释是行首，一旦注释一多，看起来很别扭，例如：
 
 ![img](https://ws1.sinaimg.cn/large/006tNc79ly1fyxyox3p0bj30k60ax74n.jpg)
 
@@ -102,13 +94,15 @@
 
 **理论上说，不建议保留已经注释掉的代码，既然注释了就没用，如果自己觉得代码可能有用可以加一个TODO表示待优化等**
 
-# 四、代码规范检查插件
+# <font color='#ff0000'>四、代码规范检查插件</font>
+
+## Alibaba Java Coding Guidelines插件
 
 ![img](https://ws1.sinaimg.cn/large/006tNc79ly1fyxyoz7scdj310w0maabs.jpg)
 
 ![img](https://ws4.sinaimg.cn/large/006tNc79ly1fyxyp08snsj30ts0s1tcd.jpg)
 
-打开 File>>Settings >> Plugins >> Browse repositories 输入 Alibaba 搜索 **Alibaba Java Coding Guidelines** 下载安装
+打开 File>>Settings >> Plugins >> Browse repositories 输入 Alibaba 搜索  `Alibaba Java Coding Guidelines`  下载安装
 
 ![img](https://ws3.sinaimg.cn/large/006tNc79ly1fyxyp19pfzj30cw0q9myb.jpg)
 
@@ -118,17 +112,21 @@
 
 个人感觉这个插件对于新手开发很有帮助，能从开始就纠正一些不良编码习惯，而且一些提示也是很多老手没注意到的，值得学习一下！
 
+## FindBugs-IDEA插件
+
+安装方法同上，在IDEA插件市场搜索`FindBugs`即可。
+
+效果图：
+
+![](https://ws3.sinaimg.cn/large/006tNc79ly1fyzmw6gkflj31620niqja.jpg)
+
 # 五、代码折叠
 
 如果一些逻辑比较复杂，翻起来比较麻烦，建议进行代码折叠，IDEA中代码折叠是：
 
-```
+```java
 // <editor-fold desc="描述信息"> 
-```
-
-​    `要折叠的内容`
-
-```
+// 要折叠的内容
 // </editor-fold>
 ```
 
@@ -144,7 +142,7 @@
 
 switch顿时干净！
 
-# 六、IDEA忽略大小写，快速代码提示自动完成（巨实用！）
+# <font color='#ff0000'>六、IDEA忽略大小写，快速代码提示自动完成（巨实用！）</font>
 
 IDEA有很强大的代码自动完成功能，例如声明变量 ：String str=""; 输入“St”的时候String就已经出来了，但是如果你输入“st”就不会出来，这是因为IDEA默认的代码提示是区分大小写的，有时候这很不方便，解决方式如下：
 
@@ -158,7 +156,7 @@ IDEA有很强大的代码自动完成功能，例如声明变量 ：String str="
 
 如上图标注 1 和 2 所示，默认 IntelliJ IDEA 是没有开启自动 import 包的功能。勾选标注 1 选项，IntelliJ IDEA 将在我们书写代码的时候自动帮我们优化导入的包，比如自动去掉一些没有用到的包。勾选标注 2 选项，IntelliJ IDEA 将在我们书写代码的时候自动帮我们导入需要用到的包。但是对于那些同名的包，还是需要手动 `Alt + Enter` 进行导入的，IntelliJ IDEA 目前还无法智能到替我们做判断。**设置完成之后代码中的相关jar包会自动导入，很方便**
 
-# 八、鼠标滚轮控制字体缩放设置方法：
+# 八、鼠标滚轮控制字体缩放设置方法
 
 ![img](https://ws3.sinaimg.cn/large/006tNc79ly1fyxyp77pfcj30pg0jamyt.jpg)
 
@@ -231,7 +229,7 @@ Ctrl+Shift+I（Command+Shift+I）：独立弹窗，一般多用于在不定位�
 # 十二、其它插件
 
 - Key Promote：快捷键提示插件，方便记忆IDEA的快捷键。
-- ECTranslate：翻译插件，快捷键（Ctrl+1）
+- ECTranslate：翻译插件，快捷键（Ctrl+i）
 
 ![img](https://ws3.sinaimg.cn/large/006tNc79ly1fyxyperuklj30gg08cgpt.jpg)
 
@@ -241,11 +239,11 @@ Ctrl+Shift+I（Command+Shift+I）：独立弹窗，一般多用于在不定位�
 
 ![img](https://ws1.sinaimg.cn/large/006tNc79ly1fyxyphy4w8j308w0fyt9s.jpg)
 
-## **IDEA Ctrl+D复制行数据设置**
+## IDEA Ctrl+D复制行数据设置
 
 默认情况IDEA是复制行数据或者已选择的数据，但是这样感觉不太好，我就想复制整行而非包含选择的：![img](https://ws3.sinaimg.cn/large/006tNc79ly1fyxypifiv4j30zy0o1dgj.jpg)
 
-# 十四、自动转换properties配置文件中文Unicode编码问题
+# <font color='#ff0000'>十四、自动转换properties配置文件中文Unicode编码问题</font>
 
 ![img](https://ws2.sinaimg.cn/large/006tNc79ly1fyxypizymxj30kc04075t.jpg)
 
