@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Vue知识点整理 · IT人员资料收集册</title>
+        <title>mpvue安装及注意的问题 · IT人员资料收集册</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -73,8 +73,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Vue开发细节总结.html" />
+    <link rel="next" href="基于mpvue团团店小程序详细讲解.html" />
     
+    
+    <link rel="prev" href="mpvue使用遇到的问题.html" />
     
 
     </head>
@@ -1203,7 +1205,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.5.1.2" data-path="mpvue安装及注意问题.html">
+        <li class="chapter active" data-level="2.1.5.1.2" data-path="mpvue安装及注意问题.html">
             
                 <a href="mpvue安装及注意问题.html">
             
@@ -1903,7 +1905,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="3.1.9.1.1" data-path="Vue知识点整理.html">
+        <li class="chapter " data-level="3.1.9.1.1" data-path="Vue知识点整理.html">
             
                 <a href="Vue知识点整理.html">
             
@@ -3648,7 +3650,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Vue知识点整理</a>
+        <a href=".." >mpvue安装及注意的问题</a>
     </h1>
 </div>
 
@@ -3663,137 +3665,86 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#vue&#x77E5;&#x8BC6;&#x70B9;&#x6574;&#x7406;"><b></b>Vue&#x77E5;&#x8BC6;&#x70B9;&#x6574;&#x7406;</a></li></ul></div><a href="#vue&#x77E5;&#x8BC6;&#x70B9;&#x6574;&#x7406;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="vue&#x77E5;&#x8BC6;&#x70B9;&#x6574;&#x7406;"><a name="vue&#x77E5;&#x8BC6;&#x70B9;&#x6574;&#x7406;" class="anchor-navigation-ex-anchor" href="#vue&#x77E5;&#x8BC6;&#x70B9;&#x6574;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>Vue&#x77E5;&#x8BC6;&#x70B9;&#x6574;&#x7406;</h1>
-<h4 id="&#x4E00;&#x3001;&#x5BF9;&#x4E8E;mvvm&#x7684;&#x7406;&#x89E3;&#xFF1F;"><a name="&#x4E00;&#x3001;&#x5BF9;&#x4E8E;mvvm&#x7684;&#x7406;&#x89E3;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x3001;&#x5BF9;&#x4E8E;mvvm&#x7684;&#x7406;&#x89E3;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x4E00;&#x3001;&#x5BF9;&#x4E8E;MVVM&#x7684;&#x7406;&#x89E3;&#xFF1F;</strong></h4>
-<p>MVVM &#x662F; Model-View-ViewModel &#x7684;&#x7F29;&#x5199;&#x3002;</p>
-<ul>
-<li><strong>Model</strong> &#x4EE3;&#x8868;&#x6570;&#x636E;&#x6A21;&#x578B;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;Model&#x4E2D;&#x5B9A;&#x4E49;&#x6570;&#x636E;&#x4FEE;&#x6539;&#x548C;&#x64CD;&#x4F5C;&#x7684;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x3002;</li>
-<li><strong>View</strong> &#x4EE3;&#x8868;UI &#x7EC4;&#x4EF6;&#xFF0C;&#x5B83;&#x8D1F;&#x8D23;&#x5C06;&#x6570;&#x636E;&#x6A21;&#x578B;&#x8F6C;&#x5316;&#x6210;UI &#x5C55;&#x73B0;&#x51FA;&#x6765;&#x3002;</li>
-<li><strong>ViewModel</strong> &#x76D1;&#x542C;&#x6A21;&#x578B;&#x6570;&#x636E;&#x7684;&#x6539;&#x53D8;&#x548C;&#x63A7;&#x5236;&#x89C6;&#x56FE;&#x884C;&#x4E3A;&#x3001;&#x5904;&#x7406;&#x7528;&#x6237;&#x4EA4;&#x4E92;&#xFF0C;&#x7B80;&#x5355;&#x7406;&#x89E3;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x540C;&#x6B65;View &#x548C; Model&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x8FDE;&#x63A5;Model&#x548C;View&#x3002;</li>
-</ul>
-<p>&#x5728;MVVM&#x67B6;&#x6784;&#x4E0B;&#xFF0C;View &#x548C; Model &#x4E4B;&#x95F4;&#x5E76;&#x6CA1;&#x6709;&#x76F4;&#x63A5;&#x7684;&#x8054;&#x7CFB;&#xFF0C;&#x800C;&#x662F;&#x901A;&#x8FC7;ViewModel&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#xFF0C;Model &#x548C; ViewModel &#x4E4B;&#x95F4;&#x7684;&#x4EA4;&#x4E92;&#x662F;&#x53CC;&#x5411;&#x7684;&#xFF0C; &#x56E0;&#x6B64;View &#x6570;&#x636E;&#x7684;&#x53D8;&#x5316;&#x4F1A;&#x540C;&#x6B65;&#x5230;Model&#x4E2D;&#xFF0C;&#x800C;Model &#x6570;&#x636E;&#x7684;&#x53D8;&#x5316;&#x4E5F;&#x4F1A;&#x7ACB;&#x5373;&#x53CD;&#x5E94;&#x5230;View &#x4E0A;&#x3002;</p>
-<p><strong>ViewModel</strong> &#x901A;&#x8FC7;&#x53CC;&#x5411;&#x6570;&#x636E;&#x7ED1;&#x5B9A;&#x628A; View &#x5C42;&#x548C; Model &#x5C42;&#x8FDE;&#x63A5;&#x4E86;&#x8D77;&#x6765;&#xFF0C;&#x800C;View &#x548C; Model &#x4E4B;&#x95F4;&#x7684;&#x540C;&#x6B65;&#x5DE5;&#x4F5C;&#x5B8C;&#x5168;&#x662F;&#x81EA;&#x52A8;&#x7684;&#xFF0C;&#x65E0;&#x9700;&#x4EBA;&#x4E3A;&#x5E72;&#x6D89;&#xFF0C;&#x56E0;&#x6B64;&#x5F00;&#x53D1;&#x8005;&#x53EA;&#x9700;&#x5173;&#x6CE8;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x624B;&#x52A8;&#x64CD;&#x4F5C;DOM&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x5173;&#x6CE8;&#x6570;&#x636E;&#x72B6;&#x6001;&#x7684;&#x540C;&#x6B65;&#x95EE;&#x9898;&#xFF0C;&#x590D;&#x6742;&#x7684;&#x6570;&#x636E;&#x72B6;&#x6001;&#x7EF4;&#x62A4;&#x5B8C;&#x5168;&#x7531; MVVM &#x6765;&#x7EDF;&#x4E00;&#x7BA1;&#x7406;&#x3002;</p>
-<h4 id="&#x4E8C;&#x3001;vue&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;"><a name="&#x4E8C;&#x3001;vue&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x3001;vue&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x4E8C;&#x3001;Vue&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;</strong></h4>
-<p><strong>beforeCreate</strong>&#xFF08;&#x521B;&#x5EFA;&#x524D;&#xFF09;&#xFF0C;&#x5728;&#x6570;&#x636E;&#x89C2;&#x6D4B;&#x548C;&#x521D;&#x59CB;&#x5316;&#x4E8B;&#x4EF6;&#x8FD8;&#x672A;&#x5F00;&#x59CB;</p>
-<p><strong>created</strong>&#xFF08;&#x521B;&#x5EFA;&#x540E;&#xFF09;&#xFF0C;&#x5B8C;&#x6210;&#x6570;&#x636E;&#x89C2;&#x6D4B;&#xFF0C;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x7684;&#x8FD0;&#x7B97;&#xFF0C;&#x521D;&#x59CB;&#x5316;&#x4E8B;&#x4EF6;&#xFF0C; $el &#x5C5E;&#x6027;&#x8FD8;&#x6CA1;&#x6709;&#x663E;&#x793A;&#x51FA;&#x6765;</p>
-<p><strong>beforeMount</strong>&#xFF08;&#x8F7D;&#x5165;&#x524D;&#xFF09;&#xFF0C;&#x5728;&#x6302;&#x8F7D;&#x5F00;&#x59CB;&#x4E4B;&#x524D;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x76F8;&#x5173;&#x7684;render&#x51FD;&#x6570;&#x9996;&#x6B21;&#x88AB;&#x8C03;&#x7528;&#x3002;&#x5B9E;&#x4F8B;&#x5DF2;&#x5B8C;&#x6210;&#x4EE5;&#x4E0B;&#x7684;&#x914D;&#x7F6E;&#xFF1A;&#x7F16;&#x8BD1;&#x6A21;&#x677F;&#xFF0C;&#x628A;data&#x91CC;&#x9762;&#x7684;&#x6570;&#x636E;&#x548C;&#x6A21;&#x677F;&#x751F;&#x6210;html&#x3002;&#x6CE8;&#x610F;&#x6B64;&#x65F6;&#x8FD8;&#x6CA1;&#x6709;&#x6302;&#x8F7D;html&#x5230;&#x9875;&#x9762;&#x4E0A;&#x3002;</p>
-<p><strong>mounted</strong>&#xFF08;&#x8F7D;&#x5165;&#x540E;&#xFF09;&#xFF0C;&#x5728;el &#x88AB;&#x65B0;&#x521B;&#x5EFA;&#x7684; vm.$el &#x66FF;&#x6362;&#xFF0C;&#x5E76;&#x6302;&#x8F7D;&#x5230;&#x5B9E;&#x4F8B;&#x4E0A;&#x53BB;&#x4E4B;&#x540E;&#x8C03;&#x7528;&#x3002;&#x5B9E;&#x4F8B;&#x5DF2;&#x5B8C;&#x6210;&#x4EE5;&#x4E0B;&#x7684;&#x914D;&#x7F6E;&#xFF1A;&#x7528;&#x4E0A;&#x9762;&#x7F16;&#x8BD1;&#x597D;&#x7684;html&#x5185;&#x5BB9;&#x66FF;&#x6362;el&#x5C5E;&#x6027;&#x6307;&#x5411;&#x7684;DOM&#x5BF9;&#x8C61;&#x3002;&#x5B8C;&#x6210;&#x6A21;&#x677F;&#x4E2D;&#x7684;html&#x6E32;&#x67D3;&#x5230;html&#x9875;&#x9762;&#x4E2D;&#x3002;&#x6B64;&#x8FC7;&#x7A0B;&#x4E2D;&#x8FDB;&#x884C;ajax&#x4EA4;&#x4E92;&#x3002;</p>
-<p><strong>beforeUpdate</strong>&#xFF08;&#x66F4;&#x65B0;&#x524D;&#xFF09;&#xFF0C;&#x5728;&#x6570;&#x636E;&#x66F4;&#x65B0;&#x4E4B;&#x524D;&#x8C03;&#x7528;&#xFF0C;&#x53D1;&#x751F;&#x5728;&#x865A;&#x62DF;DOM&#x91CD;&#x65B0;&#x6E32;&#x67D3;&#x548C;&#x6253;&#x8865;&#x4E01;&#x4E4B;&#x524D;&#x3002;&#x53EF;&#x4EE5;&#x5728;&#x8BE5;&#x94A9;&#x5B50;&#x4E2D;&#x8FDB;&#x4E00;&#x6B65;&#x5730;&#x66F4;&#x6539;&#x72B6;&#x6001;&#xFF0C;&#x4E0D;&#x4F1A;&#x89E6;&#x53D1;&#x9644;&#x52A0;&#x7684;&#x91CD;&#x6E32;&#x67D3;&#x8FC7;&#x7A0B;&#x3002;</p>
-<p><strong>updated</strong>&#xFF08;&#x66F4;&#x65B0;&#x540E;&#xFF09;&#xFF0C;&#x5728;&#x7531;&#x4E8E;&#x6570;&#x636E;&#x66F4;&#x6539;&#x5BFC;&#x81F4;&#x7684;&#x865A;&#x62DF;DOM&#x91CD;&#x65B0;&#x6E32;&#x67D3;&#x548C;&#x6253;&#x8865;&#x4E01;&#x4E4B;&#x540E;&#x8C03;&#x7528;&#x3002;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x7EC4;&#x4EF6;DOM&#x5DF2;&#x7ECF;&#x66F4;&#x65B0;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x4F9D;&#x8D56;&#x4E8E;DOM&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x7136;&#x800C;&#x5728;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5E94;&#x8BE5;&#x907F;&#x514D;&#x5728;&#x6B64;&#x671F;&#x95F4;&#x66F4;&#x6539;&#x72B6;&#x6001;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x66F4;&#x65B0;&#x65E0;&#x9650;&#x5FAA;&#x73AF;&#x3002;&#x8BE5;&#x94A9;&#x5B50;&#x5728;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x6E32;&#x67D3;&#x671F;&#x95F4;&#x4E0D;&#x88AB;&#x8C03;&#x7528;&#x3002;</p>
-<p><strong>beforeDestroy</strong>&#xFF08;&#x9500;&#x6BC1;&#x524D;&#xFF09;&#xFF0C;&#x5728;&#x5B9E;&#x4F8B;&#x9500;&#x6BC1;&#x4E4B;&#x524D;&#x8C03;&#x7528;&#x3002;&#x5B9E;&#x4F8B;&#x4ECD;&#x7136;&#x5B8C;&#x5168;&#x53EF;&#x7528;&#x3002;</p>
-<p><strong>destroyed</strong>&#xFF08;&#x9500;&#x6BC1;&#x540E;&#xFF09;&#xFF0C;&#x5728;&#x5B9E;&#x4F8B;&#x9500;&#x6BC1;&#x4E4B;&#x540E;&#x8C03;&#x7528;&#x3002;&#x8C03;&#x7528;&#x540E;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x5668;&#x4F1A;&#x88AB;&#x79FB;&#x9664;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x5B50;&#x5B9E;&#x4F8B;&#x4E5F;&#x4F1A;&#x88AB;&#x9500;&#x6BC1;&#x3002;&#x8BE5;&#x94A9;&#x5B50;&#x5728;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x6E32;&#x67D3;&#x671F;&#x95F4;&#x4E0D;&#x88AB;&#x8C03;&#x7528;&#x3002;</p>
-<p><strong>1&#x3001;&#x4EC0;&#x4E48;&#x662F;vue&#x751F;&#x547D;&#x5468;&#x671F;&#xFF1F;</strong></p>
-<p>&#x7B54;&#xFF1A; Vue &#x5B9E;&#x4F8B;&#x4ECE;&#x521B;&#x5EFA;&#x5230;&#x9500;&#x6BC1;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x5C31;&#x662F;&#x751F;&#x547D;&#x5468;&#x671F;&#x3002;&#x4ECE;&#x5F00;&#x59CB;&#x521B;&#x5EFA;&#x3001;&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x3001;&#x7F16;&#x8BD1;&#x6A21;&#x677F;&#x3001;&#x6302;&#x8F7D;Dom&#x2192;&#x6E32;&#x67D3;&#x3001;&#x66F4;&#x65B0;&#x2192;&#x6E32;&#x67D3;&#x3001;&#x9500;&#x6BC1;&#x7B49;&#x4E00;&#x7CFB;&#x5217;&#x8FC7;&#x7A0B;&#xFF0C;&#x79F0;&#x4E4B;&#x4E3A; Vue &#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x3002;</p>
-<p><strong>2&#x3001;vue&#x751F;&#x547D;&#x5468;&#x671F;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</strong></p>
-<p>&#x7B54;&#xFF1A;&#x5B83;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E2D;&#x6709;&#x591A;&#x4E2A;&#x4E8B;&#x4EF6;&#x94A9;&#x5B50;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x5728;&#x63A7;&#x5236;&#x6574;&#x4E2A;Vue&#x5B9E;&#x4F8B;&#x7684;&#x8FC7;&#x7A0B;&#x65F6;&#x66F4;&#x5BB9;&#x6613;&#x5F62;&#x6210;&#x597D;&#x7684;&#x903B;&#x8F91;&#x3002;</p>
-<p><strong>3&#x3001;vue&#x751F;&#x547D;&#x5468;&#x671F;&#x603B;&#x5171;&#x6709;&#x51E0;&#x4E2A;&#x9636;&#x6BB5;&#xFF1F;</strong></p>
-<p>&#x7B54;&#xFF1A;&#x5B83;&#x53EF;&#x4EE5;&#x603B;&#x5171;&#x5206;&#x4E3A;8&#x4E2A;&#x9636;&#x6BB5;&#xFF1A;&#x521B;&#x5EFA;&#x524D;/&#x540E;&#x3001;&#x8F7D;&#x5165;&#x524D;/&#x540E;&#x3001;&#x66F4;&#x65B0;&#x524D;/&#x540E;&#x3001;&#x9500;&#x6BC1;&#x524D;/&#x9500;&#x6BC1;&#x540E;&#x3002;</p>
-<p><strong>4&#x3001;&#x7B2C;&#x4E00;&#x6B21;&#x9875;&#x9762;&#x52A0;&#x8F7D;&#x4F1A;&#x89E6;&#x53D1;&#x54EA;&#x51E0;&#x4E2A;&#x94A9;&#x5B50;&#xFF1F;</strong></p>
-<p>&#x7B54;&#xFF1A;&#x4F1A;&#x89E6;&#x53D1;&#x4E0B;&#x9762;&#x8FD9;&#x51E0;&#x4E2A;beforeCreate&#x3001;created&#x3001;beforeMount&#x3001;mounted &#x3002;</p>
-<p><strong>5&#x3001;DOM &#x6E32;&#x67D3;&#x5728;&#x54EA;&#x4E2A;&#x5468;&#x671F;&#x4E2D;&#x5C31;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#xFF1F;</strong></p>
-<p>&#x7B54;&#xFF1A;DOM &#x6E32;&#x67D3;&#x5728; mounted &#x4E2D;&#x5C31;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#x4E86;&#x3002;</p>
-<h4 id="&#x4E09;&#x3001;-vue&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x53CC;&#x5411;&#x7ED1;&#x5B9A;&#x7684;&#x539F;&#x7406;&#xFF1A;objectdefineproperty"><a name="&#x4E09;&#x3001;-vue&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x53CC;&#x5411;&#x7ED1;&#x5B9A;&#x7684;&#x539F;&#x7406;&#xFF1A;objectdefineproperty" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x3001;-vue&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x53CC;&#x5411;&#x7ED1;&#x5B9A;&#x7684;&#x539F;&#x7406;&#xFF1A;objectdefineproperty"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x4E09;&#x3001; Vue&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x53CC;&#x5411;&#x7ED1;&#x5B9A;&#x7684;&#x539F;&#x7406;&#xFF1A;Object.defineProperty()</strong></h4>
-<p>vue&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x53CC;&#x5411;&#x7ED1;&#x5B9A;&#x4E3B;&#x8981;&#x662F;&#xFF1A;&#x91C7;<strong>&#x7528;&#x6570;&#x636E;&#x52AB;&#x6301;&#x7ED3;&#x5408;&#x53D1;&#x5E03;&#x8005;-&#x8BA2;&#x9605;&#x8005;&#x6A21;&#x5F0F;</strong>&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x901A;&#x8FC7; Object.defineProperty() &#x6765;&#x52AB;&#x6301;&#x5404;&#x4E2A;&#x5C5E;&#x6027;&#x7684;setter&#xFF0C;getter&#xFF0C;&#x5728;&#x6570;&#x636E;&#x53D8;&#x52A8;&#x65F6;&#x53D1;&#x5E03;&#x6D88;&#x606F;&#x7ED9;&#x8BA2;&#x9605;&#x8005;&#xFF0C;&#x89E6;&#x53D1;&#x76F8;&#x5E94;&#x76D1;&#x542C;&#x56DE;&#x8C03;&#x3002;&#x5F53;&#x628A;&#x4E00;&#x4E2A;&#x666E;&#x901A; Javascript &#x5BF9;&#x8C61;&#x4F20;&#x7ED9; Vue &#x5B9E;&#x4F8B;&#x6765;&#x4F5C;&#x4E3A;&#x5B83;&#x7684; data &#x9009;&#x9879;&#x65F6;&#xFF0C;Vue &#x5C06;&#x904D;&#x5386;&#x5B83;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x7528; Object.defineProperty() &#x5C06;&#x5B83;&#x4EEC;&#x8F6C;&#x4E3A; getter/setter&#x3002;&#x7528;&#x6237;&#x770B;&#x4E0D;&#x5230; getter/setter&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x5185;&#x90E8;&#x5B83;&#x4EEC;&#x8BA9; Vue &#x8FFD;&#x8E2A;&#x4F9D;&#x8D56;&#xFF0C;&#x5728;&#x5C5E;&#x6027;&#x88AB;&#x8BBF;&#x95EE;&#x548C;&#x4FEE;&#x6539;&#x65F6;&#x901A;&#x77E5;&#x53D8;&#x5316;&#x3002;</p>
-<p>vue&#x7684;&#x6570;&#x636E;&#x53CC;&#x5411;&#x7ED1;&#x5B9A; &#x5C06;MVVM&#x4F5C;&#x4E3A;&#x6570;&#x636E;&#x7ED1;&#x5B9A;&#x7684;&#x5165;&#x53E3;&#xFF0C;&#x6574;&#x5408;Observer&#xFF0C;Compile&#x548C;Watcher&#x4E09;&#x8005;&#xFF0C;&#x901A;&#x8FC7;Observer&#x6765;&#x76D1;&#x542C;&#x81EA;&#x5DF1;&#x7684;model&#x7684;&#x6570;&#x636E;&#x53D8;&#x5316;&#xFF0C;&#x901A;&#x8FC7;Compile&#x6765;&#x89E3;&#x6790;&#x7F16;&#x8BD1;&#x6A21;&#x677F;&#x6307;&#x4EE4;&#xFF08;vue&#x4E2D;&#x662F;&#x7528;&#x6765;&#x89E3;&#x6790;  {{}}&#xFF09;&#xFF0C;&#x6700;&#x7EC8;&#x5229;&#x7528;watcher&#x642D;&#x8D77;observer&#x548C;Compile&#x4E4B;&#x95F4;&#x7684;&#x901A;&#x4FE1;&#x6865;&#x6881;&#xFF0C;&#x8FBE;&#x5230;&#x6570;&#x636E;&#x53D8;&#x5316; &#x2014;&gt;&#x89C6;&#x56FE;&#x66F4;&#x65B0;&#xFF1B;&#x89C6;&#x56FE;&#x4EA4;&#x4E92;&#x53D8;&#x5316;&#xFF08;input&#xFF09;&#x2014;&gt;&#x6570;&#x636E;model&#x53D8;&#x66F4;&#x53CC;&#x5411;&#x7ED1;&#x5B9A;&#x6548;&#x679C;&#x3002;</p>
-<p>js&#x5B9E;&#x73B0;&#x7B80;&#x5355;&#x7684;&#x53CC;&#x5411;&#x7ED1;&#x5B9A;&#xFF1A;</p>
-<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>app<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>txt<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
- <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>show<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text/javascript<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
- <span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
- Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> <span class="token string">&apos;txt&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
-  <span class="token keyword">get</span><span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> obj
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  <span class="token keyword">set</span><span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>newValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&apos;txt&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>value <span class="token operator">=</span> newValue
-  document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&apos;show&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> newValue
-  <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span><span class="token punctuation">)</span>
-  document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&apos;keyup&apos;</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  obj<span class="token punctuation">.</span>txt <span class="token operator">=</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value
-  <span class="token punctuation">}</span><span class="token punctuation">)</span>
- </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
-</code></pre>
-<h4 id="&#x56DB;&#x3001;vue&#x7EC4;&#x4EF6;&#x95F4;&#x7684;&#x53C2;&#x6570;&#x4F20;&#x9012;"><a name="&#x56DB;&#x3001;vue&#x7EC4;&#x4EF6;&#x95F4;&#x7684;&#x53C2;&#x6570;&#x4F20;&#x9012;" class="anchor-navigation-ex-anchor" href="#&#x56DB;&#x3001;vue&#x7EC4;&#x4EF6;&#x95F4;&#x7684;&#x53C2;&#x6570;&#x4F20;&#x9012;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x56DB;&#x3001;Vue&#x7EC4;&#x4EF6;&#x95F4;&#x7684;&#x53C2;&#x6570;&#x4F20;&#x9012;</strong></h4>
-<p><strong>1&#x3001;&#x7236;&#x7EC4;&#x4EF6;&#x4E0E;&#x5B50;&#x7EC4;&#x4EF6;&#x4F20;&#x503C;</strong></p>
-<p>&#x7236;&#x7EC4;&#x4EF6;&#x4F20;&#x7ED9;&#x5B50;&#x7EC4;&#x4EF6;&#xFF1A;&#x5B50;&#x7EC4;&#x4EF6;&#x901A;&#x8FC7;props&#x65B9;&#x6CD5;&#x63A5;&#x53D7;&#x6570;&#x636E;&#xFF1B;</p>
-<p>&#x5B50;&#x7EC4;&#x4EF6;&#x4F20;&#x7ED9;&#x7236;&#x7EC4;&#x4EF6;&#xFF1A; $emit &#x65B9;&#x6CD5;&#x4F20;&#x9012;&#x53C2;&#x6570;</p>
-<p><strong>2&#x3001;&#x975E;&#x7236;&#x5B50;&#x7EC4;&#x4EF6;&#x95F4;&#x7684;&#x6570;&#x636E;&#x4F20;&#x9012;&#xFF0C;&#x5144;&#x5F1F;&#x7EC4;&#x4EF6;&#x4F20;&#x503C;</strong></p>
-<p>eventBus&#xFF0C;&#x5C31;&#x662F;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#x4E2D;&#x5FC3;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x4E2D;&#x8F6C;&#x7AD9;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x5B83;&#x6765;&#x4F20;&#x9012;&#x4E8B;&#x4EF6;&#x548C;&#x63A5;&#x6536;&#x4E8B;&#x4EF6;&#x3002;&#x9879;&#x76EE;&#x6BD4;&#x8F83;&#x5C0F;&#x65F6;&#xFF0C;&#x7528;&#x8FD9;&#x4E2A;&#x6BD4;&#x8F83;&#x5408;&#x9002;&#xFF08;&#x867D;&#x7136;&#x4E5F;&#x6709;&#x4E0D;&#x5C11;&#x4EBA;&#x63A8;&#x8350;&#x76F4;&#x63A5;&#x7528;VUEX&#xFF0C;&#x5177;&#x4F53;&#x6765;&#x8BF4;&#x770B;&#x9700;&#x6C42;&#x54AF;&#x3002;&#x6280;&#x672F;&#x53EA;&#x662F;&#x624B;&#x6BB5;&#xFF0C;&#x76EE;&#x7684;&#x8FBE;&#x5230;&#x624D;&#x662F;&#x738B;&#x9053;&#xFF09;&#x3002;</p>
-<h4 id="&#x4E94;&#x3001;vue&#x7684;&#x8DEF;&#x7531;&#x5B9E;&#x73B0;&#xFF1A;hash&#x6A21;&#x5F0F;-&#x548C;-history&#x6A21;&#x5F0F;"><a name="&#x4E94;&#x3001;vue&#x7684;&#x8DEF;&#x7531;&#x5B9E;&#x73B0;&#xFF1A;hash&#x6A21;&#x5F0F;-&#x548C;-history&#x6A21;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#&#x4E94;&#x3001;vue&#x7684;&#x8DEF;&#x7531;&#x5B9E;&#x73B0;&#xFF1A;hash&#x6A21;&#x5F0F;-&#x548C;-history&#x6A21;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x4E94;&#x3001;Vue&#x7684;&#x8DEF;&#x7531;&#x5B9E;&#x73B0;&#xFF1A;hash&#x6A21;&#x5F0F; &#x548C; history&#x6A21;&#x5F0F;</strong></h4>
-<p><strong>hash&#x6A21;&#x5F0F;&#xFF1A;</strong> &#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x7B26;&#x53F7;&#x201C;#&#x201D;&#xFF0C;#&#x4EE5;&#x53CA;#&#x540E;&#x9762;&#x7684;&#x5B57;&#x7B26;&#x79F0;&#x4E4B;&#x4E3A;hash&#xFF0C;&#x7528; window.location.hash&#x8BFB;&#x53D6;&#x3002;&#x7279;&#x70B9;&#xFF1A;hash&#x867D;&#x7136;&#x5728;URL&#x4E2D;&#xFF0C;&#x4F46;&#x4E0D;&#x88AB;&#x5305;&#x62EC;&#x5728;HTTP&#x8BF7;&#x6C42;&#x4E2D;&#xFF1B;&#x7528;&#x6765;&#x6307;&#x5BFC;&#x6D4F;&#x89C8;&#x5668;&#x52A8;&#x4F5C;&#xFF0C;&#x5BF9;&#x670D;&#x52A1;&#x7AEF;&#x5B89;&#x5168;&#x65E0;&#x7528;&#xFF0C;hash&#x4E0D;&#x4F1A;&#x91CD;&#x52A0;&#x8F7D;&#x9875;&#x9762;&#x3002;</p>
-<p><strong>history&#x6A21;&#x5F0F;&#xFF1A;</strong> history&#x91C7;&#x7528;HTML5&#x7684;&#x65B0;&#x7279;&#x6027;&#xFF1B;&#x4E14;&#x63D0;&#x4F9B;&#x4E86;&#x4E24;&#x4E2A;&#x65B0;&#x65B9;&#x6CD5;&#xFF1A; pushState()&#xFF0C; replaceState()&#x53EF;&#x4EE5;&#x5BF9;&#x6D4F;&#x89C8;&#x5668;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x6808;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x4EE5;&#x53CA;popState&#x4E8B;&#x4EF6;&#x7684;&#x76D1;&#x542C;&#x5230;&#x72B6;&#x6001;&#x53D8;&#x66F4;&#x3002;</p>
-<h4 id="&#x516D;&#x3001;vue&#x4E0E;angular&#x4EE5;&#x53CA;react&#x7684;&#x533A;&#x522B;&#xFF1F;"><a name="&#x516D;&#x3001;vue&#x4E0E;angular&#x4EE5;&#x53CA;react&#x7684;&#x533A;&#x522B;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x516D;&#x3001;vue&#x4E0E;angular&#x4EE5;&#x53CA;react&#x7684;&#x533A;&#x522B;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x516D;&#x3001;Vue&#x4E0E;Angular&#x4EE5;&#x53CA;React&#x7684;&#x533A;&#x522B;&#xFF1F;</strong></h4>
-<p>&#x7248;&#x672C;&#x5728;&#x4E0D;&#x65AD;&#x66F4;&#x65B0;&#xFF0C;&#x4EE5;&#x4E0B;&#x7684;&#x533A;&#x522B;&#x6709;&#x53EF;&#x80FD;&#x4E0D;&#x662F;&#x5F88;&#x6B63;&#x786E;&#x3002;&#x6211;&#x5DE5;&#x4F5C;&#x4E2D;&#x53EA;&#x7528;&#x5230;vue&#xFF0C;&#x5BF9;angular&#x548C;react&#x4E0D;&#x600E;&#x4E48;&#x719F;&#x3002;</p>
-<p><strong>1&#x3001;&#x4E0E;AngularJS&#x7684;&#x533A;&#x522B;</strong></p>
-<p>&#x76F8;&#x540C;&#x70B9;&#xFF1A;&#x90FD;&#x652F;&#x6301;&#x6307;&#x4EE4;&#xFF1A;&#x5185;&#x7F6E;&#x6307;&#x4EE4;&#x548C;&#x81EA;&#x5B9A;&#x4E49;&#x6307;&#x4EE4;&#xFF1B;&#x90FD;&#x652F;&#x6301;&#x8FC7;&#x6EE4;&#x5668;&#xFF1A;&#x5185;&#x7F6E;&#x8FC7;&#x6EE4;&#x5668;&#x548C;&#x81EA;&#x5B9A;&#x4E49;&#x8FC7;&#x6EE4;&#x5668;&#xFF1B;&#x90FD;&#x652F;&#x6301;&#x53CC;&#x5411;&#x6570;&#x636E;&#x7ED1;&#x5B9A;&#xFF1B;&#x90FD;&#x4E0D;&#x652F;&#x6301;&#x4F4E;&#x7AEF;&#x6D4F;&#x89C8;&#x5668;&#x3002;</p>
-<p>&#x4E0D;&#x540C;&#x70B9;&#xFF1A;AngularJS&#x7684;&#x5B66;&#x4E60;&#x6210;&#x672C;&#x9AD8;&#xFF0C;&#x6BD4;&#x5982;&#x589E;&#x52A0;&#x4E86;Dependency Injection&#x7279;&#x6027;&#xFF0C;&#x800C;Vue.js&#x672C;&#x8EAB;&#x63D0;&#x4F9B;&#x7684;API&#x90FD;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x3001;&#x76F4;&#x89C2;&#xFF1B;&#x5728;&#x6027;&#x80FD;&#x4E0A;&#xFF0C;AngularJS&#x4F9D;&#x8D56;&#x5BF9;&#x6570;&#x636E;&#x505A;&#x810F;&#x68C0;&#x67E5;&#xFF0C;&#x6240;&#x4EE5;Watcher&#x8D8A;&#x591A;&#x8D8A;&#x6162;&#xFF1B;Vue.js&#x4F7F;&#x7528;&#x57FA;&#x4E8E;&#x4F9D;&#x8D56;&#x8FFD;&#x8E2A;&#x7684;&#x89C2;&#x5BDF;&#x5E76;&#x4E14;&#x4F7F;&#x7528;&#x5F02;&#x6B65;&#x961F;&#x5217;&#x66F4;&#x65B0;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#x90FD;&#x662F;&#x72EC;&#x7ACB;&#x89E6;&#x53D1;&#x7684;&#x3002;</p>
-<p><strong>2&#x3001;&#x4E0E;React&#x7684;&#x533A;&#x522B;</strong></p>
-<p>&#x76F8;&#x540C;&#x70B9;&#xFF1A;React&#x91C7;&#x7528;&#x7279;&#x6B8A;&#x7684;JSX&#x8BED;&#x6CD5;&#xFF0C;Vue.js&#x5728;&#x7EC4;&#x4EF6;&#x5F00;&#x53D1;&#x4E2D;&#x4E5F;&#x63A8;&#x5D07;&#x7F16;&#x5199;.vue&#x7279;&#x6B8A;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#xFF0C;&#x5BF9;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x90FD;&#x6709;&#x4E00;&#x4E9B;&#x7EA6;&#x5B9A;&#xFF0C;&#x4E24;&#x8005;&#x90FD;&#x9700;&#x8981;&#x7F16;&#x8BD1;&#x540E;&#x4F7F;&#x7528;&#xFF1B;&#x4E2D;&#x5FC3;&#x601D;&#x60F3;&#x76F8;&#x540C;&#xFF1A;&#x4E00;&#x5207;&#x90FD;&#x662F;&#x7EC4;&#x4EF6;&#xFF0C;&#x7EC4;&#x4EF6;&#x5B9E;&#x4F8B;&#x4E4B;&#x95F4;&#x53EF;&#x4EE5;&#x5D4C;&#x5957;&#xFF1B;&#x90FD;&#x63D0;&#x4F9B;&#x5408;&#x7406;&#x7684;&#x94A9;&#x5B50;&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;&#x5F00;&#x53D1;&#x8005;&#x5B9A;&#x5236;&#x5316;&#x5730;&#x53BB;&#x5904;&#x7406;&#x9700;&#x6C42;&#xFF1B;&#x90FD;&#x4E0D;&#x5185;&#x7F6E;&#x5217;&#x6570;AJAX&#xFF0C;Route&#x7B49;&#x529F;&#x80FD;&#x5230;&#x6838;&#x5FC3;&#x5305;&#xFF0C;&#x800C;&#x662F;&#x4EE5;&#x63D2;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;&#x52A0;&#x8F7D;&#xFF1B;&#x5728;&#x7EC4;&#x4EF6;&#x5F00;&#x53D1;&#x4E2D;&#x90FD;&#x652F;&#x6301;mixins&#x7684;&#x7279;&#x6027;&#x3002;</p>
-<p>&#x4E0D;&#x540C;&#x70B9;&#xFF1A;React&#x91C7;&#x7528;&#x7684;Virtual DOM&#x4F1A;&#x5BF9;&#x6E32;&#x67D3;&#x51FA;&#x6765;&#x7684;&#x7ED3;&#x679C;&#x505A;&#x810F;&#x68C0;&#x67E5;&#xFF1B;Vue.js&#x5728;&#x6A21;&#x677F;&#x4E2D;&#x63D0;&#x4F9B;&#x4E86;&#x6307;&#x4EE4;&#xFF0C;&#x8FC7;&#x6EE4;&#x5668;&#x7B49;&#xFF0C;&#x53EF;&#x4EE5;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#xFF0C;&#x5FEB;&#x6377;&#x5730;&#x64CD;&#x4F5C;Virtual DOM&#x3002;</p>
-<h4 id="&#x4E03;&#x3001;vue&#x8DEF;&#x7531;&#x7684;&#x94A9;&#x5B50;&#x51FD;&#x6570;"><a name="&#x4E03;&#x3001;vue&#x8DEF;&#x7531;&#x7684;&#x94A9;&#x5B50;&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x4E03;&#x3001;vue&#x8DEF;&#x7531;&#x7684;&#x94A9;&#x5B50;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x4E03;&#x3001;vue&#x8DEF;&#x7531;&#x7684;&#x94A9;&#x5B50;&#x51FD;&#x6570;</strong></h4>
-<p>&#x9996;&#x9875;&#x53EF;&#x4EE5;&#x63A7;&#x5236;&#x5BFC;&#x822A;&#x8DF3;&#x8F6C;&#xFF0C;beforeEach&#xFF0C;afterEach&#x7B49;&#xFF0C;&#x4E00;&#x822C;&#x7528;&#x4E8E;&#x9875;&#x9762;title&#x7684;&#x4FEE;&#x6539;&#x3002;&#x4E00;&#x4E9B;&#x9700;&#x8981;&#x767B;&#x5F55;&#x624D;&#x80FD;&#x8C03;&#x6574;&#x9875;&#x9762;&#x7684;&#x91CD;&#x5B9A;&#x5411;&#x529F;&#x80FD;&#x3002;</p>
-<ul>
-<li><strong>beforeEach</strong>&#x4E3B;&#x8981;&#x6709;3&#x4E2A;&#x53C2;&#x6570;to&#xFF0C;from&#xFF0C;next&#x3002;</li>
-<li><strong>to</strong>&#xFF1A;route&#x5373;&#x5C06;&#x8FDB;&#x5165;&#x7684;&#x76EE;&#x6807;&#x8DEF;&#x7531;&#x5BF9;&#x8C61;&#x3002;</li>
-<li><strong>from</strong>&#xFF1A;route&#x5F53;&#x524D;&#x5BFC;&#x822A;&#x6B63;&#x8981;&#x79BB;&#x5F00;&#x7684;&#x8DEF;&#x7531;&#x3002;</li>
-<li><strong>next</strong>&#xFF1A;function&#x4E00;&#x5B9A;&#x8981;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;resolve&#x8FD9;&#x4E2A;&#x94A9;&#x5B50;&#x3002;&#x6267;&#x884C;&#x6548;&#x679C;&#x4F9D;&#x8D56;next&#x65B9;&#x6CD5;&#x7684;&#x8C03;&#x7528;&#x53C2;&#x6570;&#x3002;&#x53EF;&#x4EE5;&#x63A7;&#x5236;&#x7F51;&#x9875;&#x7684;&#x8DF3;&#x8F6C;&#x3002;</li>
-</ul>
-<h4 id="&#x516B;&#x3001;vuex&#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x600E;&#x4E48;&#x4F7F;&#x7528;&#xFF1F;&#x54EA;&#x79CD;&#x529F;&#x80FD;&#x573A;&#x666F;&#x4F7F;&#x7528;&#x5B83;&#xFF1F;"><a name="&#x516B;&#x3001;vuex&#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x600E;&#x4E48;&#x4F7F;&#x7528;&#xFF1F;&#x54EA;&#x79CD;&#x529F;&#x80FD;&#x573A;&#x666F;&#x4F7F;&#x7528;&#x5B83;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#&#x516B;&#x3001;vuex&#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x600E;&#x4E48;&#x4F7F;&#x7528;&#xFF1F;&#x54EA;&#x79CD;&#x529F;&#x80FD;&#x573A;&#x666F;&#x4F7F;&#x7528;&#x5B83;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x516B;&#x3001;vuex&#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x600E;&#x4E48;&#x4F7F;&#x7528;&#xFF1F;&#x54EA;&#x79CD;&#x529F;&#x80FD;&#x573A;&#x666F;&#x4F7F;&#x7528;&#x5B83;&#xFF1F;</strong></h4>
-<p>&#x53EA;&#x7528;&#x6765;&#x8BFB;&#x53D6;&#x7684;&#x72B6;&#x6001;&#x96C6;&#x4E2D;&#x653E;&#x5728;store&#x4E2D;&#xFF1B; &#x6539;&#x53D8;&#x72B6;&#x6001;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x63D0;&#x4EA4;mutations&#xFF0C;&#x8FD9;&#x662F;&#x4E2A;&#x540C;&#x6B65;&#x7684;&#x4E8B;&#x7269;&#xFF1B; &#x5F02;&#x6B65;&#x903B;&#x8F91;&#x5E94;&#x8BE5;&#x5C01;&#x88C5;&#x5728;action&#x4E2D;&#x3002;</p>
-<p>&#x5728;main.js&#x5F15;&#x5165;store&#xFF0C;&#x6CE8;&#x5165;&#x3002;&#x65B0;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;store&#xFF0C;&#x2026; export &#x3002;</p>
-<p>&#x573A;&#x666F;&#x6709;&#xFF1A;&#x5355;&#x9875;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x7EC4;&#x4EF6;&#x4E4B;&#x95F4;&#x7684;&#x72B6;&#x6001;&#x3001;&#x97F3;&#x4E50;&#x64AD;&#x653E;&#x3001;&#x767B;&#x5F55;&#x72B6;&#x6001;&#x3001;&#x52A0;&#x5165;&#x8D2D;&#x7269;&#x8F66;</p>
-<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fyuqfb3o7kj30jh0fbt8n.jpg" alt=""></p>
-<p><strong>state</strong>&#xFF1A;Vuex &#x4F7F;&#x7528;&#x5355;&#x4E00;&#x72B6;&#x6001;&#x6811;,&#x5373;&#x6BCF;&#x4E2A;&#x5E94;&#x7528;&#x5C06;&#x4EC5;&#x4EC5;&#x5305;&#x542B;&#x4E00;&#x4E2A;store &#x5B9E;&#x4F8B;&#xFF0C;&#x4F46;&#x5355;&#x4E00;&#x72B6;&#x6001;&#x6811;&#x548C;&#x6A21;&#x5757;&#x5316;&#x5E76;&#x4E0D;&#x51B2;&#x7A81;&#x3002;&#x5B58;&#x653E;&#x7684;&#x6570;&#x636E;&#x72B6;&#x6001;&#xFF0C;&#x4E0D;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4FEE;&#x6539;&#x91CC;&#x9762;&#x7684;&#x6570;&#x636E;&#x3002;</p>
-<p><strong>mutations</strong>&#xFF1A;mutations&#x5B9A;&#x4E49;&#x7684;&#x65B9;&#x6CD5;&#x52A8;&#x6001;&#x4FEE;&#x6539;Vuex &#x7684; store &#x4E2D;&#x7684;&#x72B6;&#x6001;&#x6216;&#x6570;&#x636E;&#x3002;</p>
-<p><strong>getters</strong>&#xFF1A;&#x7C7B;&#x4F3C;vue&#x7684;&#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x6765;&#x8FC7;&#x6EE4;&#x4E00;&#x4E9B;&#x6570;&#x636E;&#x3002;</p>
-<p><strong>action</strong>&#xFF1A;actions&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x901A;&#x8FC7;&#x5C06;mutations&#x91CC;&#x9762;&#x5904;&#x91CC;&#x6570;&#x636E;&#x7684;&#x65B9;&#x6CD5;&#x53D8;&#x6210;&#x53EF;&#x5F02;&#x6B65;&#x7684;&#x5904;&#x7406;&#x6570;&#x636E;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x7B80;&#x5355;&#x7684;&#x8BF4;&#x5C31;&#x662F;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x3002;view &#x5C42;&#x901A;&#x8FC7; store.dispath &#x6765;&#x5206;&#x53D1; action&#x3002;</p>
-<pre class="language-"><code>1. const store = new Vuex.Store({ //store&#x5B9E;&#x4F8B;
-2.  state: {
-3.  count: 0
-4.  },
-5.  mutations: { 
-6.  increment (state) {
-7.  state.count++
-8.  }
-9.  },
-10.  actions: { 
-11.  increment (context) {
-12.  context.commit(&apos;increment&apos;)
-13.  }
-14.  }
-15. })
-</code></pre><p><strong>modules</strong>&#xFF1A;&#x9879;&#x76EE;&#x7279;&#x522B;&#x590D;&#x6742;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;&#x6BCF;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x62E5;&#x6709;&#x81EA;&#x5DF1;&#x7684;state&#x3001;mutation&#x3001;action&#x3001;getters&#xFF0C;&#x4F7F;&#x5F97;&#x7ED3;&#x6784;&#x975E;&#x5E38;&#x6E05;&#x6670;&#xFF0C;&#x65B9;&#x4FBF;&#x7BA1;&#x7406;&#x3002;</p>
-<pre class="language-"><code>1. const moduleA = {
-2.  state: { ... },
-3.  mutations: { ... },
-4.  actions: { ... },
-5.  getters: { ... }
-6.  }
-7. const moduleB = {
-8.  state: { ... },
-9.  mutations: { ... },
-10.  actions: { ... }
-11.  }
-12. 
-13. const store = new Vuex.Store({
-14.  modules: {
-15.  a: moduleA,
-16.  b: moduleB
-17. })
-</code></pre><h4 id="&#x4E5D;&#x3001;&#x5176;&#x5B83;&#x5C0F;&#x77E5;&#x8BC6;&#x70B9;"><a name="&#x4E5D;&#x3001;&#x5176;&#x5B83;&#x5C0F;&#x77E5;&#x8BC6;&#x70B9;" class="anchor-navigation-ex-anchor" href="#&#x4E5D;&#x3001;&#x5176;&#x5B83;&#x5C0F;&#x77E5;&#x8BC6;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>&#x4E5D;&#x3001;&#x5176;&#x5B83;&#x5C0F;&#x77E5;&#x8BC6;&#x70B9;</strong></h4>
-<p><strong>1&#x3001;css&#x53EA;&#x5728;&#x5F53;&#x524D;&#x7EC4;&#x4EF6;&#x8D77;&#x4F5C;&#x7528;</strong></p>
-<p>&#x7B54;&#xFF1A;&#x5728;style&#x6807;&#x7B7E;&#x4E2D;&#x5199;&#x5165;<strong>scoped</strong>&#x5373;&#x53EF; &#x4F8B;&#x5982;&#xFF1A; </p>
-<style scoped></style>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#mpvue&#x5B89;&#x88C5;&#x53CA;&#x6CE8;&#x610F;&#x7684;&#x95EE;&#x9898;"><b></b>mpvue&#x5B89;&#x88C5;&#x53CA;&#x6CE8;&#x610F;&#x7684;&#x95EE;&#x9898;</a></li><ul><li><span class="title-icon "></span><a href="#1&#x5B89;&#x88C5;&#x524D;&#x5FC5;&#x8981;&#x7684;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x3001;"><b></b>1.&#x5B89;&#x88C5;&#x524D;&#x5FC5;&#x8981;&#x7684;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x3001;</a></li><li><span class="title-icon "></span><a href="#2mpvue&#x5B89;&#x88C5;&#x53CA;&#x9879;&#x76EE;&#x521B;&#x5EFA;"><b></b>2.mpvue&#x5B89;&#x88C5;&#x53CA;&#x9879;&#x76EE;&#x521B;&#x5EFA;</a></li><li><span class="title-icon "></span><a href="#3&#x5728;&#x5C0F;&#x7A0B;&#x5E8F;&#x5DE5;&#x5177;&#x4E0A;&#x5F15;&#x5165;&#x9879;&#x76EE;"><b></b>3.&#x5728;&#x5C0F;&#x7A0B;&#x5E8F;&#x5DE5;&#x5177;&#x4E0A;&#x5F15;&#x5165;&#x9879;&#x76EE;</a></li><li><span class="title-icon "></span><a href="#&#x5C0F;&#x7ED3;&#xFF1A;"><b></b>&#x5C0F;&#x7ED3;&#xFF1A;</a></li></ul></ul></div><a href="#mpvue&#x5B89;&#x88C5;&#x53CA;&#x6CE8;&#x610F;&#x7684;&#x95EE;&#x9898;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="mpvue&#x5B89;&#x88C5;&#x53CA;&#x6CE8;&#x610F;&#x7684;&#x95EE;&#x9898;"><a name="mpvue&#x5B89;&#x88C5;&#x53CA;&#x6CE8;&#x610F;&#x7684;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#mpvue&#x5B89;&#x88C5;&#x53CA;&#x6CE8;&#x610F;&#x7684;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>mpvue&#x5B89;&#x88C5;&#x53CA;&#x6CE8;&#x610F;&#x7684;&#x95EE;&#x9898;</h1>
+<h2 id="1&#x5B89;&#x88C5;&#x524D;&#x5FC5;&#x8981;&#x7684;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x3001;"><a name="1&#x5B89;&#x88C5;&#x524D;&#x5FC5;&#x8981;&#x7684;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x3001;" class="anchor-navigation-ex-anchor" href="#1&#x5B89;&#x88C5;&#x524D;&#x5FC5;&#x8981;&#x7684;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x3001;"><i class="fa fa-link" aria-hidden="true"></i></a>1.&#x5B89;&#x88C5;&#x524D;&#x5FC5;&#x8981;&#x7684;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x3001;</h2>
+<p>1&#xFF09;node.js
+&#x200B;&#x73B0;&#x5728;&#xFF0C;&#x524D;&#x7AEF;&#x5DE5;&#x5177;&#x94FE;&#x57FA;&#x672C;&#x90FD;&#x4F9D;&#x8D56;Node.js&#xFF0C;&#x6240;&#x4EE5;&#x8BF7;&#x7387;&#x5148;&#x5B89;&#x88C5;&#x5B83;&#x5427;&#x3002;</p>
+<p><a href="https://nodejs.org/en/download/" target="_blank">&#x4E0B;&#x8F7D;&#x5730;&#x5740;</a></p>
+<p>&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x6253;&#x5F00;&#x4F60;&#x7684;&#x547D;&#x4EE4;&#x884C;&#x8F93;&#x5165;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF0C;&#x9A8C;&#x8BC1;&#x5B89;&#x88C5;&#x662F;&#x5426;&#x6210;&#x529F;&#xFF1A;</p>
+<pre class="language-"><code class="lang-shell">node --version
+//&#x6210;&#x529F;&#x7684;&#x8BDD;&#x8F93;&#x51FA;&#x7C7B;&#x4F3C;&#xFF1A;v10.6.0
 
-<p><strong>2&#x3001;v-if &#x548C; v-show &#x533A;&#x522B;</strong></p>
-<p>&#x7B54;&#xFF1A;v-if&#x6309;&#x7167;&#x6761;&#x4EF6;&#x662F;&#x5426;&#x6E32;&#x67D3;&#xFF0C;v-show&#x662F;display&#x7684;block&#x6216;none&#xFF1B;</p>
-<p><strong>3&#x3001;$route&#x548C;$router&#x7684;&#x533A;&#x522B;</strong></p>
-<p>&#x7B54;&#xFF1A;$route&#x662F;&#x201C;&#x8DEF;&#x7531;&#x4FE1;&#x606F;&#x5BF9;&#x8C61;&#x201D;&#xFF0C;&#x5305;&#x62EC;path&#xFF0C;params&#xFF0C;hash&#xFF0C;query&#xFF0C;fullPath&#xFF0C;matched&#xFF0C;name&#x7B49;&#x8DEF;&#x7531;&#x4FE1;&#x606F;&#x53C2;&#x6570;&#x3002;&#x800C;$router&#x662F;&#x201C;&#x8DEF;&#x7531;&#x5B9E;&#x4F8B;&#x201D;&#x5BF9;&#x8C61;&#x5305;&#x62EC;&#x4E86;&#x8DEF;&#x7531;&#x7684;&#x8DF3;&#x8F6C;&#x65B9;&#x6CD5;&#xFF0C;&#x94A9;&#x5B50;&#x51FD;&#x6570;&#x7B49;&#x3002;</p>
+<span class="token function">npm</span> --version
+//&#x6210;&#x529F;&#x7684;&#x8BDD;&#x8F93;&#x51FA;&#x7C7B;&#x4F3C;&#xFF1A;6.1.0
+</code></pre>
+<p>&#x7136;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF0C;&#x5C06;npm&#x7684;&#x4E0B;&#x8F7D;&#x6E90;&#x5207;&#x6362;&#x5230;&#x56FD;&#x5185;&#x6DD8;&#x5B9D;&#x7684;&#x955C;&#x50CF;&#xFF0C;&#x4EE5;&#x63D0;&#x9AD8;&#x4E0B;&#x8F7D;&#x65F6;&#x7684;&#x901F;&#x5EA6;&#x548C;&#x6210;&#x529F;&#x7387;&#xFF1A;</p>
+<pre class="language-"><code>npm set registry https://registry.npm.taobao.org/
+</code></pre><p>2&#xFF09;vue-cli
+<strong>vue-cli</strong>&#x662F;&#x4E00;&#x4E2A;vue&#x4E13;&#x7528;&#x7684;&#x9879;&#x76EE;&#x811A;&#x624B;&#x67B6;&#x5DE5;&#x5177;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x65B9;&#x4FBF;&#x7684;&#x521B;&#x5EFA;vue&#x9879;&#x76EE;&#x9AA8;&#x67B6;&#x4EE3;&#x7801;&#xFF0C;&#x5305;&#x62EC;&#x6211;&#x4EEC;&#x8981;&#x8BB2;&#x5230;&#x7684;mpvue&#x7684;&#x9879;&#x76EE;&#x4EE3;&#x7801;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5B89;&#x88C5;node.js&#x540E;&#x91CC;&#x9762;&#x5305;&#x542B;&#x7684;npm&#x5DE5;&#x5177;&#x6765;&#x5B89;&#x88C5;vue-cli&#xFF0C;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x8F93;&#x5165;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre class="language-"><code>npm install vue-cli -g
+</code></pre><p>&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x8F93;&#x5165;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#xFF1A;</p>
+<pre class="language-"><code>vue -V
+
+// &#x6210;&#x529F;&#x7684;&#x8BDD;&#x4F1A;&#x8F93;&#x51FA;&#x5982;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;
+2.9.6
+</code></pre><p>3&#xFF09;&#x5FAE;&#x4FE1;&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177;
+&#x8FD9;&#x4E2A;&#x5DE5;&#x5177;&#x662F;&#x5F00;&#x53D1;&#x3001;&#x8C03;&#x8BD5;&#x548C;&#x6A21;&#x62DF;&#x8FD0;&#x884C;&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;&#x7684;&#x6700;&#x6838;&#x5FC3;&#x7684;&#x5DE5;&#x5177;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x5FC5;&#x987B;&#x5B89;&#x88C5;&#x3002;</p>
+<p><a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html" target="_blank">&#x4E0B;&#x8F7D;&#x5730;&#x5740;&#xFF1A;</a></p>
+<p>4&#xFF09;&#x5B89;&#x88C5;&#x5F00;&#x53D1;&#x7F16;&#x7A0B;&#x5DE5;&#x5177;&#x5982;&#xFF1A;Visual Studio Code &#x3001;Sublime Text&#x3001;WebStorm&#x7B49;</p>
+<hr>
+<h2 id="2mpvue&#x5B89;&#x88C5;&#x53CA;&#x9879;&#x76EE;&#x521B;&#x5EFA;"><a name="2mpvue&#x5B89;&#x88C5;&#x53CA;&#x9879;&#x76EE;&#x521B;&#x5EFA;" class="anchor-navigation-ex-anchor" href="#2mpvue&#x5B89;&#x88C5;&#x53CA;&#x9879;&#x76EE;&#x521B;&#x5EFA;"><i class="fa fa-link" aria-hidden="true"></i></a>2.mpvue&#x5B89;&#x88C5;&#x53CA;&#x9879;&#x76EE;&#x521B;&#x5EFA;</h2>
+<p>1&#xFF09;mpvue&#x5B89;&#x88C5;</p>
+<p>&#x5728;&#x4EFB;&#x610F;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x6253;&#x5F00;CMD&#x63A7;&#x5236;&#x9762;&#x677F;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;</p>
+<pre class="language-"><code># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E; mpvue-quickstart &#x6A21;&#x677F;&#x7684;&#x65B0;&#x9879;&#x76EE;
+$ vue init mpvue/mpvue-quickstart my-project//&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x559C;&#x597D;&#x8D77;&#x540D;&#x5B57;
+</code></pre><p>&#x547D;&#x4EE4;&#x884C;&#x5C06;&#x4E00;&#x6B65;&#x6B65;&#x7684;&#x5F15;&#x5BFC;&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x6216;&#x586B;&#x5199;&#x9879;&#x76EE;&#x7684;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x8FD8;&#x4E0D;&#x592A;&#x660E;&#x767D;&#x8FD9;&#x4E9B;&#x5185;&#x5BB9;&#x7684;&#x542B;&#x4E49;&#xFF0C;&#x53EF;&#x4EE5;&#x5148;&#x76F4;&#x63A5;&#x5168;&#x90E8;&#x6309;&#x56DE;&#x8F66;&#xFF1A;</p>
+<pre class="language-"><code>? Project name //&#x53EF;&#x4EE5;&#x9ED8;&#x8BA4;&#x4E5F;&#x53EF;&#x4EE5;&#x8F93;&#x5165;&#x65B0;&#x7684;
+? wxmp appid touristappid //&#x8F93;&#x5165;&#x5C0F;&#x7A0B;&#x5E8F;appid
+? Project description A Mpvue project
+? Author kevinzhang <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>kevin.zhang@moredist.com</span><span class="token punctuation">&gt;</span></span>
+? Vue build runtime
+? Use Vuex? Yes
+? Use ESLint to lint your code? //&#x53EF;&#x4EE5;&#x9009;&#x62E9;NO&#xFF0C;&#x540E;&#x9762;&#x68C0;&#x67E5;&#x633A;&#x8BA8;&#x538C;&#x7684;
+? Pick an ESLint preset Standard
+? &#x5C0F;&#x7A0B;&#x5E8F;&#x6D4B;&#x8BD5;&#xFF0C;&#x656C;&#x8BF7;&#x5173;&#x6CE8;&#x6700;&#x65B0;&#x5FAE;&#x4FE1;&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177;&#x7684;&#x201C;&#x6D4B;&#x8BD5;&#x62A5;&#x544A;&#x201D;&#x529F;&#x80FD; 
+
+   vue-cli &#xB7; Generated &quot;my-project&quot;.
+
+   To get started:
+
+     cd firstapp
+     npm install
+     npm run dev
+</code></pre><p>&#x4E0A;&#x9762;&#x8FC7;&#x7A0B;vue-cli&#x4E3B;&#x8981;&#x662F;&#x5148;&#x4ECE;&#x8FDC;&#x7A0B;&#x7684;&#x4EE3;&#x7801;&#x4ED3;&#x5E93;&#x4E2D;&#x4E0B;&#x8F7D;&#x4E86;&#x4E00;&#x4EFD;&#x6CE8;&#x518C;&#x540D;&#x4E3A;<code>mpvue/mpvue-quickstart</code>&#x7684;&#x6A21;&#x677F;&#x4EE3;&#x7801;&#xFF0C;&#x7136;&#x540E;&#x6839;&#x636E;&#x5F00;&#x53D1;&#x8005;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x63D0;&#x793A;&#x8FC7;&#x7A0B;&#x4E2D;&#x8F93;&#x5165;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x751F;&#x6210;&#x4E00;&#x4EFD;&#x7ECF;&#x8FC7;&#x914D;&#x7F6E;&#x540E;&#x7684;&#x4EE3;&#x7801;&#x3002;</p>
+<p>&#x8FD9;&#x4EFD;&#x4EE3;&#x7801;&#x6682;&#x65F6;&#x8FD8;&#x8FD0;&#x884C;&#x4E0D;&#x8D77;&#x6765;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x8FD8;&#x7F3A;&#x5C11;&#x4F9D;&#x8D56;&#x7684;&#x5E93;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x8FDB;&#x884C;&#x4F9D;&#x8D56;&#x5E93;&#x7684;&#x5B89;&#x88C5;&#xFF1A;</p>
+<pre class="language-"><code>cd my-project
+npm install
+</code></pre><p>&#x7B49;&#x51E0;&#x5206;&#x949F;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#x4F60;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8BE5;&#x76EE;&#x5F55;&#x4E0B;&#x591A;&#x51FA;&#x4E86;&#x4E00;&#x4E2A;node_modules&#x76EE;&#x5F55;&#x3002;</p>
+<p>&#x7136;&#x540E;&#xFF0C;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x8BA9;&#x8FD9;&#x4E2A;&#x4EE3;&#x7801;&#x8FD0;&#x884C;&#x8D77;&#x6765;&#xFF0C;&#x8FDB;&#x5165;&#x5F00;&#x53D1;&#x6A21;&#x5F0F;&#xFF1A;</p>
+<pre class="language-"><code># &#x542F;&#x52A8;&#x9879;&#x76EE;
+npm run dev
+# &#x91CD;&#x5EFA;&#x9879;&#x76EE;
+npm run build
+</code></pre><p>&#x6210;&#x529F;&#x8FD0;&#x884C;&#x540E;&#xFF0C;&#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#x4EE3;&#x7801;&#x5C31;&#x8FDB;&#x5165;&#x5F00;&#x53D1;&#x6A21;&#x5F0F;&#xFF0C;&#x4E00;&#x65E6;&#x6709;&#x6E90;&#x4EE3;&#x7801;&#x53D1;&#x751F;&#x4FEE;&#x6539;&#xFF0C;&#x5C31;&#x4F1A;&#x89E6;&#x53D1;&#x81EA;&#x52A8;&#x7F16;&#x8BD1;&#x3002;&#x56E0;&#x4E3A;mpvue&#x4F7F;&#x7528;&#x7684;&#x662F;Vue + HTML Web&#x7684;&#x5F00;&#x53D1;&#x65B9;&#x5F0F;&#x5F00;&#x53D1;&#x5C0F;&#x7A0B;&#x5E8F;&#xFF0C;&#x5B83;&#x6700;&#x7EC8;&#x8FD8;&#x662F;&#x9700;&#x8981;&#x88AB;&#x8F6C;&#x6362;&#x6210;&#x5C0F;&#x7A0B;&#x5E8F;&#x7684;&#x4EE3;&#x7801;&#x624D;&#x53EF;&#x4EE5;&#x5728;&#x5C0F;&#x7A0B;&#x5E8F;&#x73AF;&#x5883;&#x8FD0;&#x884C;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x7684;&#x81EA;&#x52A8;&#x7F16;&#x8BD1;&#x7684;&#x76EE;&#x7684;&#x5C31;&#x662F;&#x8981;&#x628A;Web&#x4EE3;&#x7801;&#x7F16;&#x8BD1;&#x6210;&#x5C0F;&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#x3002;&#x7F16;&#x8BD1;&#x540E;&#x7684;&#x4EE3;&#x7801;&#x4F1A;&#x5728;<code>dist</code>&#x76EE;&#x5F55;&#x4E0B;&#xFF1A;</p>
+<p><img src="http://pl3tgqmrn.bkt.clouddn.com/image/xiaochengxu/xiaochengxml.png" alt=""></p>
+<h2 id="3&#x5728;&#x5C0F;&#x7A0B;&#x5E8F;&#x5DE5;&#x5177;&#x4E0A;&#x5F15;&#x5165;&#x9879;&#x76EE;"><a name="3&#x5728;&#x5C0F;&#x7A0B;&#x5E8F;&#x5DE5;&#x5177;&#x4E0A;&#x5F15;&#x5165;&#x9879;&#x76EE;" class="anchor-navigation-ex-anchor" href="#3&#x5728;&#x5C0F;&#x7A0B;&#x5E8F;&#x5DE5;&#x5177;&#x4E0A;&#x5F15;&#x5165;&#x9879;&#x76EE;"><i class="fa fa-link" aria-hidden="true"></i></a>3.&#x5728;&#x5C0F;&#x7A0B;&#x5E8F;&#x5DE5;&#x5177;&#x4E0A;&#x5F15;&#x5165;&#x9879;&#x76EE;</h2>
+<p>1&#xFF09;<strong>&#x6253;&#x5F00;&#x5FAE;&#x4FE1;&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177;&#xFF0C;&#x9009;&#x62E9;&#x65B0;&#x589E;&#x9879;&#x76EE;</strong>&#xFF1A;</p>
+<p><img src="http://pl3tgqmrn.bkt.clouddn.com/image/xiaochengxu/xcxcj1.png" alt=""></p>
+<p>2&#xFF09;<strong>&#x586B;&#x5199;&#x9879;&#x76EE;&#x4FE1;&#x606F;:</strong></p>
+<p><img src="http://pl3tgqmrn.bkt.clouddn.com/image/xiaochengxu/xcxcj2.png" alt=""></p>
+<p>3&#xFF09;<strong>&#x8FDB;&#x5165;&#x5C0F;&#x7A0B;&#x5E8F;&#xFF0C;&#x5728;&#x5DE6;&#x8FB9;&#x663E;&#x793A;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</strong></p>
+<p><img src="http://pl3tgqmrn.bkt.clouddn.com/image/xiaochengxu/xcxcj3.png" alt=""></p>
+<p>4&#xFF09;<strong>&#x5C0F;&#x7A0B;&#x5E8F;&#x6709;&#x53EF;&#x80FD;&#x7528;&#x5230;&#x7684;&#x8BBE;&#x7F6E;&#xFF1A;</strong></p>
+<p><img src="http://pl3tgqmrn.bkt.clouddn.com/image/xiaochengxu/xcxcj4.png" alt=""></p>
+<p>5&#xFF09;<strong>&#x5E38;&#x89C1;&#x9519;&#x8BEF;&#x53CA;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</strong></p>
+<p><a href="https://www.jianshu.com/p/4ee222b64f58" target="_blank">&#x7F51;&#x53CB;&#x603B;&#x7ED3;</a></p>
+<blockquote>
+<p>1.&#x201C;&#x672A;&#x627E;&#x5230;&#x5165;&#x53E3; app.json &#x6587;&#x4EF6;&#xFF0C;&#x6216;&#x8005;&#x6587;&#x4EF6;&#x8BFB;&#x53D6;&#x5931;&#x8D25;&#xFF0C;&#x8BF7;&#x68C0;&#x67E5;&#x540E;&#x91CD;&#x65B0;&#x7F16;&#x8BD1;&#x3002;&#x201D;</p>
+<p>&#x200B;     &#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x627E;&#x5230;project.config.json</p>
+<p>&#x200B;     &#x6253;&#x5F00;&#x4FEE;&#x6539;&#x53C2;&#x6570;&quot;miniprogramRoot&quot;: &quot;dist/wx/&quot;, //&#x5F53;&#x524D;&#x9879;&#x76EE;&#x4E0B;dist&#x76EE;&#x5F55;&#x5177;&#x4F53;&#x5C0F;&#x7A0B;&#x5E8F;&#x8DEF;&#x5F84;</p>
+</blockquote>
+<h2 id="&#x5C0F;&#x7ED3;&#xFF1A;"><a name="&#x5C0F;&#x7ED3;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x5C0F;&#x7ED3;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C0F;&#x7ED3;&#xFF1A;</h2>
+<p>&#x672C;&#x6587;&#x5148;&#x7B80;&#x8981;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;&#x4F7F;&#x7528;mpvue&#x5F00;&#x53D1;&#x5C0F;&#x7A0B;&#x5E8F;&#x7684;&#x524D;&#x671F;&#x51C6;&#x5907;&#xFF0C;&#x5728;&#x540E;&#x9762;&#x7684;&#x5C06;&#x4E00;&#x6B65;&#x6B65;&#x8BB2;&#x89E3;mpvue&#x7684;&#x8BE6;&#x7EC6;&#x7528;&#x6CD5;&#x3002;</p>
 
                                 
                                 </section>
@@ -3821,8 +3772,12 @@
 
             
                 
+                <a href="mpvue使用遇到的问题.html" class="navigation navigation-prev " aria-label="Previous page: mpvue使用遇到的问题">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="Vue开发细节总结.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Vue开发细节总结">
+                
+                <a href="基于mpvue团团店小程序详细讲解.html" class="navigation navigation-next " aria-label="Next page: 基于mpvue团团店小程序详细讲解">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -3833,7 +3788,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Vue知识点整理","level":"3.1.9.1.1","depth":4,"next":{"title":"Vue开发细节总结","level":"3.1.9.1.2","depth":4,"path":"md/Vue开发细节总结.md","ref":"md/Vue开发细节总结.md","articles":[]},"previous":{"title":"总结篇","level":"3.1.9.1","depth":3,"ref":"","articles":[{"title":"Vue知识点整理","level":"3.1.9.1.1","depth":4,"path":"md/Vue知识点整理.md","ref":"md/Vue知识点整理.md","articles":[]},{"title":"Vue开发细节总结","level":"3.1.9.1.2","depth":4,"path":"md/Vue开发细节总结.md","ref":"md/Vue开发细节总结.md","articles":[]},{"title":"Vue总结(重要)","level":"3.1.9.1.3","depth":4,"path":"md/Vue总结[重要].md","ref":"md/Vue总结[重要].md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["github","donate","splitter","anchor-navigation-ex","-sharing","sharing-plus","-highlight","prism","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/TangHanF/project_record_book"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"","alipayText":"支付宝打赏","button":"打赏一下","title":"","wechat":"https://ws3.sinaimg.cn/large/006tNc79ly1fyy51c9ek3j30u00u0jsp.jpg","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"serif","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"sharing":{"qq":false,"all":["weibo","qq","qzone","douban"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"TangHanF（Mr.Guo）","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"IT人员资料收集册","language":"zh-hans","links":{"sidebar":{}},"gitbook":"3.2.3","description":""},"file":{"path":"md/Vue知识点整理.md","mtime":"2019-01-04T10:41:50.294Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-11T02:45:27.726Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"mpvue安装及注意的问题","level":"2.1.5.1.2","depth":4,"next":{"title":"基于mpvue团团店小程序详细讲解","level":"2.1.5.1.3","depth":4,"path":"md/基于mpvue团团店小程序详细讲解.md","ref":"md/基于mpvue团团店小程序详细讲解.md","articles":[]},"previous":{"title":"mpvue使用遇到的问题","level":"2.1.5.1.1","depth":4,"path":"md/mpvue使用遇到的问题.md","ref":"md/mpvue使用遇到的问题.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","donate","splitter","anchor-navigation-ex","-sharing","sharing-plus","-highlight","prism","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/TangHanF/project_record_book"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"","alipayText":"支付宝打赏","button":"打赏一下","title":"","wechat":"https://ws3.sinaimg.cn/large/006tNc79ly1fyy51c9ek3j30u00u0jsp.jpg","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"serif","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"sharing":{"qq":false,"all":["weibo","qq","qzone","douban"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"TangHanF（Mr.Guo）","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"IT人员资料收集册","language":"zh-hans","links":{"sidebar":{}},"gitbook":"3.2.3","description":""},"file":{"path":"md/mpvue安装及注意问题.md","mtime":"2019-01-11T02:45:14.400Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-11T02:45:27.726Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
