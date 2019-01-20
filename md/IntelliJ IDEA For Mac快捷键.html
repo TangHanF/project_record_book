@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Java 经纬度测距 · IT人员资料收集册</title>
+        <title>IntelliJ IDEA For Mac 快捷键 · IT人员资料收集册</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -73,10 +73,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Java毫秒数转时间.html" />
+    <link rel="next" href="IntelliJ IDEA For Win+Linux快捷键.html" />
     
     
-    <link rel="prev" href="Java去空格.html" />
+    <link rel="prev" href="IDEA统一设置规范.html" />
     
 
     </head>
@@ -647,7 +647,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.1.2.1.1.7" data-path="Java经纬度测距.html">
+        <li class="chapter " data-level="2.1.2.1.1.7" data-path="Java经纬度测距.html">
             
                 <a href="Java经纬度测距.html">
             
@@ -3321,7 +3321,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.1.2" data-path="IntelliJ IDEA For Mac快捷键.html">
+        <li class="chapter active" data-level="6.1.1.2" data-path="IntelliJ IDEA For Mac快捷键.html">
             
                 <a href="IntelliJ IDEA For Mac快捷键.html">
             
@@ -3676,7 +3676,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Java 经纬度测距</a>
+        <a href=".." >IntelliJ IDEA For Mac 快捷键</a>
     </h1>
 </div>
 
@@ -3691,36 +3691,189 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#java-&#x7ECF;&#x7EAC;&#x5EA6;&#x6D4B;&#x8DDD;"><b></b>Java &#x7ECF;&#x7EAC;&#x5EA6;&#x6D4B;&#x8DDD;</a></li></ul></div><a href="#java-&#x7ECF;&#x7EAC;&#x5EA6;&#x6D4B;&#x8DDD;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="java-&#x7ECF;&#x7EAC;&#x5EA6;&#x6D4B;&#x8DDD;"><a name="java-&#x7ECF;&#x7EAC;&#x5EA6;&#x6D4B;&#x8DDD;" class="anchor-navigation-ex-anchor" href="#java-&#x7ECF;&#x7EAC;&#x5EA6;&#x6D4B;&#x8DDD;"><i class="fa fa-link" aria-hidden="true"></i></a>Java &#x7ECF;&#x7EAC;&#x5EA6;&#x6D4B;&#x8DDD;</h1>
-<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MapUtil</span> <span class="token punctuation">{</span>
-    <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token keyword">static</span> <span class="token keyword">double</span> EARTH_RADIUS <span class="token operator">=</span> <span class="token number">6371.393</span><span class="token punctuation">;</span>
-
-    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">double</span> <span class="token function">rad</span><span class="token punctuation">(</span><span class="token keyword">double</span> d<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> d <span class="token operator">*</span> Math<span class="token punctuation">.</span>PI <span class="token operator">/</span> <span class="token number">180.0</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token comment">/**
-     * &#x8BA1;&#x7B97;&#x4E24;&#x4E2A;&#x7ECF;&#x7EAC;&#x5EA6;&#x4E4B;&#x95F4;&#x7684;&#x8DDD;&#x79BB;
-     *
-     * @param lat1 &#x7EAC;&#x5EA6;1
-     * @param lng1 &#x7ECF;&#x5EA6;1
-     * @param lat2 &#x7EAC;&#x5EA6;2
-     * @param lng2 &#x7ECF;&#x5EA6;2
-     * @return &#x4E24;&#x4E2A;&#x5750;&#x6807;&#x7684;&#x76F4;&#x7EBF;&#x8DDD;&#x79BB;&#xFF08;&#x5355;&#x4F4D;&#xFF1A;&#x7C73;&#xFF09;
-     */</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">double</span> <span class="token function">getDistance</span><span class="token punctuation">(</span><span class="token keyword">double</span> lat1<span class="token punctuation">,</span> <span class="token keyword">double</span> lng1<span class="token punctuation">,</span> <span class="token keyword">double</span> lat2<span class="token punctuation">,</span> <span class="token keyword">double</span> lng2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">double</span> radLat1 <span class="token operator">=</span> <span class="token function">rad</span><span class="token punctuation">(</span>lat1<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">double</span> radLat2 <span class="token operator">=</span> <span class="token function">rad</span><span class="token punctuation">(</span>lat2<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">double</span> a <span class="token operator">=</span> radLat1 <span class="token operator">-</span> radLat2<span class="token punctuation">;</span>
-        <span class="token keyword">double</span> b <span class="token operator">=</span> <span class="token function">rad</span><span class="token punctuation">(</span>lng1<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token function">rad</span><span class="token punctuation">(</span>lng2<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">double</span> s <span class="token operator">=</span> <span class="token number">2</span> <span class="token operator">*</span> Math<span class="token punctuation">.</span><span class="token function">asin</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">sqrt</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">pow</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">sin</span><span class="token punctuation">(</span>a <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">+</span>
-                Math<span class="token punctuation">.</span><span class="token function">cos</span><span class="token punctuation">(</span>radLat1<span class="token punctuation">)</span> <span class="token operator">*</span> Math<span class="token punctuation">.</span><span class="token function">cos</span><span class="token punctuation">(</span>radLat2<span class="token punctuation">)</span> <span class="token operator">*</span> Math<span class="token punctuation">.</span><span class="token function">pow</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">sin</span><span class="token punctuation">(</span>b <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        s <span class="token operator">=</span> s <span class="token operator">*</span> EARTH_RADIUS<span class="token punctuation">;</span>
-        s <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>s <span class="token operator">*</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> s<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</code></pre>
+                                <h4 id="mac&#x952E;&#x76D8;&#x7B26;&#x53F7;&#x548C;&#x4FEE;&#x9970;&#x952E;&#x8BF4;&#x660E;"><a name="mac&#x952E;&#x76D8;&#x7B26;&#x53F7;&#x548C;&#x4FEE;&#x9970;&#x952E;&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#mac&#x952E;&#x76D8;&#x7B26;&#x53F7;&#x548C;&#x4FEE;&#x9970;&#x952E;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>Mac&#x952E;&#x76D8;&#x7B26;&#x53F7;&#x548C;&#x4FEE;&#x9970;&#x952E;&#x8BF4;&#x660E;</h4>
+<ul>
+<li><code>&#x2318;</code> Command</li>
+<li><code>&#x21E7;</code> Shift</li>
+<li><code>&#x2325;</code> Option</li>
+<li><code>&#x2303;</code> Control</li>
+<li><code>&#x21A9;&#xFE0E;</code> Return/Enter</li>
+<li><code>&#x232B;</code> Delete</li>
+<li><code>&#x2326;</code> &#x5411;&#x524D;&#x5220;&#x9664;&#x952E;&#xFF08;Fn+Delete&#xFF09;</li>
+<li><code>&#x2191;</code> &#x4E0A;&#x7BAD;&#x5934;</li>
+<li><code>&#x2193;</code> &#x4E0B;&#x7BAD;&#x5934;</li>
+<li><code>&#x2190;</code> &#x5DE6;&#x7BAD;&#x5934;</li>
+<li><code>&#x2192;</code> &#x53F3;&#x7BAD;&#x5934;</li>
+<li><code>&#x21DE;</code> Page Up&#xFF08;Fn+&#x2191;&#xFF09;</li>
+<li><code>&#x21DF;</code> Page Down&#xFF08;Fn+&#x2193;&#xFF09;</li>
+<li><code>Home</code> Fn + &#x2190;</li>
+<li><code>End</code> Fn + &#x2192;</li>
+<li><code>&#x21E5;</code> &#x53F3;&#x5236;&#x8868;&#x7B26;&#xFF08;Tab&#x952E;&#xFF09;</li>
+<li><code>&#x21E4;</code> &#x5DE6;&#x5236;&#x8868;&#x7B26;&#xFF08;Shift+Tab&#xFF09;</li>
+<li><code>&#x238B;</code> Escape (Esc)</li>
+</ul>
+<h4 id="&#x4E00;&#x3001;editing&#xFF08;&#x7F16;&#x8F91;&#xFF09;"><a name="&#x4E00;&#x3001;editing&#xFF08;&#x7F16;&#x8F91;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x3001;editing&#xFF08;&#x7F16;&#x8F91;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x3001;Editing&#xFF08;&#x7F16;&#x8F91;&#xFF09;</h4>
+<ul>
+<li><code>Control + Space</code> &#x57FA;&#x672C;&#x7684;&#x4EE3;&#x7801;&#x8865;&#x5168;&#xFF08;&#x8865;&#x5168;&#x4EFB;&#x4F55;&#x7C7B;&#x3001;&#x65B9;&#x6CD5;&#x3001;&#x53D8;&#x91CF;&#xFF09;</li>
+<li><code>Control + Shift + Space</code> &#x667A;&#x80FD;&#x4EE3;&#x7801;&#x8865;&#x5168;&#xFF08;&#x8FC7;&#x6EE4;&#x5668;&#x65B9;&#x6CD5;&#x5217;&#x8868;&#x548C;&#x53D8;&#x91CF;&#x7684;&#x9884;&#x671F;&#x7C7B;&#x578B;&#xFF09;</li>
+<li><code>Command + Shift + Enter</code> &#x81EA;&#x52A8;&#x7ED3;&#x675F;&#x4EE3;&#x7801;&#xFF0C;&#x884C;&#x672B;&#x81EA;&#x52A8;&#x6DFB;&#x52A0;&#x5206;&#x53F7;</li>
+<li><code>Command + P</code> &#x663E;&#x793A;&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x4FE1;&#x606F;</li>
+<li><code>Control + J</code> &#x5FEB;&#x901F;&#x67E5;&#x770B;&#x6587;&#x6863;</li>
+<li><code>Shift + F1</code> &#x67E5;&#x770B;&#x5916;&#x90E8;&#x6587;&#x6863;&#xFF08;&#x5728;&#x67D0;&#x4E9B;&#x4EE3;&#x7801;&#x4E0A;&#x4F1A;&#x89E6;&#x53D1;&#x6253;&#x5F00;&#x6D4F;&#x89C8;&#x5668;&#x663E;&#x793A;&#x76F8;&#x5173;&#x6587;&#x6863;&#xFF09;</li>
+<li><code>Command + &#x9F20;&#x6807;&#x653E;&#x5728;&#x4EE3;&#x7801;&#x4E0A;</code> &#x663E;&#x793A;&#x4EE3;&#x7801;&#x7B80;&#x8981;&#x4FE1;&#x606F;</li>
+<li><code>Command + F1</code> &#x5728;&#x9519;&#x8BEF;&#x6216;&#x8B66;&#x544A;&#x5904;&#x663E;&#x793A;&#x5177;&#x4F53;&#x63CF;&#x8FF0;&#x4FE1;&#x606F;</li>
+<li><code>Command + N, Control + Enter, Control + N</code> &#x751F;&#x6210;&#x4EE3;&#x7801;&#xFF08;getter&#x3001;setter&#x3001;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3001;hashCode/equals,toString&#xFF09;</li>
+<li><code>Control + O</code> &#x8986;&#x76D6;&#x65B9;&#x6CD5;&#xFF08;&#x91CD;&#x5199;&#x7236;&#x7C7B;&#x65B9;&#x6CD5;&#xFF09;</li>
+<li><code>Control + I</code> &#x5B9E;&#x73B0;&#x65B9;&#x6CD5;&#xFF08;&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#xFF09;</li>
+<li><code>Command + Option + T</code> &#x5305;&#x56F4;&#x4EE3;&#x7801;&#xFF08;&#x4F7F;&#x7528;if..else, try..catch, for, synchronized&#x7B49;&#x5305;&#x56F4;&#x9009;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#xFF09;</li>
+<li><code>Command + /</code> &#x6CE8;&#x91CA;/&#x53D6;&#x6D88;&#x6CE8;&#x91CA;&#x4E0E;&#x884C;&#x6CE8;&#x91CA;</li>
+<li><code>Command + Option + /</code> &#x6CE8;&#x91CA;/&#x53D6;&#x6D88;&#x6CE8;&#x91CA;&#x4E0E;&#x5757;&#x6CE8;&#x91CA;</li>
+<li><code>Option + &#x65B9;&#x5411;&#x952E;&#x4E0A;</code> &#x8FDE;&#x7EED;&#x9009;&#x4E2D;&#x4EE3;&#x7801;&#x5757;</li>
+<li><code>Option + &#x65B9;&#x5411;&#x952E;&#x4E0B;</code> &#x51CF;&#x5C11;&#x5F53;&#x524D;&#x9009;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x5757;</li>
+<li><code>Control + Shift + Q</code> &#x663E;&#x793A;&#x4E0A;&#x4E0B;&#x6587;&#x4FE1;&#x606F;</li>
+<li><code>Option + Enter</code> &#x663E;&#x793A;&#x610F;&#x5411;&#x52A8;&#x4F5C;&#x548C;&#x5FEB;&#x901F;&#x4FEE;&#x590D;&#x4EE3;&#x7801;</li>
+<li><code>Command + Option + L</code> &#x683C;&#x5F0F;&#x5316;&#x4EE3;&#x7801;</li>
+<li><code>Control + Option + O</code> &#x4F18;&#x5316;import</li>
+<li><code>Control + Option + I</code> &#x81EA;&#x52A8;&#x7F29;&#x8FDB;&#x7EBF;</li>
+<li><code>Tab / Shift + Tab</code> &#x7F29;&#x8FDB;&#x4EE3;&#x7801; / &#x53CD;&#x7F29;&#x8FDB;&#x4EE3;&#x7801;</li>
+<li><code>Command + X</code> &#x526A;&#x5207;&#x5F53;&#x524D;&#x884C;&#x6216;&#x9009;&#x5B9A;&#x7684;&#x5757;&#x5230;&#x526A;&#x8D34;&#x677F;</li>
+<li><code>Command + C</code> &#x590D;&#x5236;&#x5F53;&#x524D;&#x884C;&#x6216;&#x9009;&#x5B9A;&#x7684;&#x5757;&#x5230;&#x526A;&#x8D34;&#x677F;</li>
+<li><code>Command + V</code> &#x4ECE;&#x526A;&#x8D34;&#x677F;&#x7C98;&#x8D34;</li>
+<li><code>Command + Shift + V</code> &#x4ECE;&#x6700;&#x8FD1;&#x7684;&#x7F13;&#x51B2;&#x533A;&#x7C98;&#x8D34;</li>
+<li><code>Command + D</code> &#x590D;&#x5236;&#x5F53;&#x524D;&#x884C;&#x6216;&#x9009;&#x5B9A;&#x7684;&#x5757;</li>
+<li><code>Command + Delete</code> &#x5220;&#x9664;&#x5F53;&#x524D;&#x884C;&#x6216;&#x9009;&#x5B9A;&#x7684;&#x5757;&#x7684;&#x884C;</li>
+<li><code>Control + Shift + J</code> &#x667A;&#x80FD;&#x7684;&#x5C06;&#x4EE3;&#x7801;&#x62FC;&#x63A5;&#x6210;&#x4E00;&#x884C;</li>
+<li><code>Command + Enter</code> &#x667A;&#x80FD;&#x7684;&#x62C6;&#x5206;&#x62FC;&#x63A5;&#x7684;&#x884C;</li>
+<li><code>Shift + Enter</code> &#x5F00;&#x59CB;&#x65B0;&#x7684;&#x4E00;&#x884C;</li>
+<li><code>Command + Shift + U</code> &#x5927;&#x5C0F;&#x5199;&#x5207;&#x6362;</li>
+<li><code>Command + Shift + ] / Command + Shift + [</code> &#x9009;&#x62E9;&#x76F4;&#x5230;&#x4EE3;&#x7801;&#x5757;&#x7ED3;&#x675F;/&#x5F00;&#x59CB;</li>
+<li><code>Option + Fn + Delete</code> &#x5220;&#x9664;&#x5230;&#x5355;&#x8BCD;&#x7684;&#x672B;&#x5C3E;</li>
+<li><code>Option + Delete</code> &#x5220;&#x9664;&#x5230;&#x5355;&#x8BCD;&#x7684;&#x5F00;&#x5934;</li>
+<li><code>Command + &#x52A0;&#x53F7; / Command + &#x51CF;&#x53F7;</code> &#x5C55;&#x5F00; / &#x6298;&#x53E0;&#x4EE3;&#x7801;&#x5757;</li>
+<li><code>Command + Shift + &#x52A0;&#x53F7;</code> &#x5C55;&#x5F00;&#x6240;&#x4EE5;&#x4EE3;&#x7801;&#x5757;</li>
+<li><code>Command + Shift + &#x51CF;&#x53F7;</code> &#x6298;&#x53E0;&#x6240;&#x6709;&#x4EE3;&#x7801;&#x5757;</li>
+<li><code>Command + W</code> &#x5173;&#x95ED;&#x6D3B;&#x52A8;&#x7684;&#x7F16;&#x8F91;&#x5668;&#x9009;&#x9879;&#x5361;</li>
+</ul>
+<h4 id="&#x4E8C;&#x3001;searchreplace&#xFF08;&#x67E5;&#x8BE2;&#x66FF;&#x6362;&#xFF09;"><a name="&#x4E8C;&#x3001;searchreplace&#xFF08;&#x67E5;&#x8BE2;&#x66FF;&#x6362;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x3001;searchreplace&#xFF08;&#x67E5;&#x8BE2;&#x66FF;&#x6362;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x3001;Search/Replace&#xFF08;&#x67E5;&#x8BE2;/&#x66FF;&#x6362;&#xFF09;</h4>
+<ul>
+<li><code>Double Shift</code> &#x67E5;&#x8BE2;&#x4EFB;&#x4F55;&#x4E1C;&#x897F;</li>
+<li><code>Command + F</code> &#x6587;&#x4EF6;&#x5185;&#x67E5;&#x627E;</li>
+<li><code>Command + G</code> &#x67E5;&#x627E;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x5411;&#x4E0B;&#x67E5;&#x627E;</li>
+<li><code>Command + Shift + G</code> &#x67E5;&#x627E;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x5411;&#x4E0A;&#x67E5;&#x627E;</li>
+<li><code>Command + R</code> &#x6587;&#x4EF6;&#x5185;&#x66FF;&#x6362;</li>
+<li><code>Command + Shift + F</code> &#x5168;&#x5C40;&#x67E5;&#x627E;&#xFF08;&#x6839;&#x636E;&#x8DEF;&#x5F84;&#xFF09;</li>
+<li><code>Command + Shift + R</code> &#x5168;&#x5C40;&#x66FF;&#x6362;&#xFF08;&#x6839;&#x636E;&#x8DEF;&#x5F84;&#xFF09;</li>
+<li><code>Command + Shift + S</code> &#x67E5;&#x8BE2;&#x7ED3;&#x6784;&#xFF08;Ultimate Edition &#x7248;&#x4E13;&#x7528;&#xFF0C;&#x9700;&#x8981;&#x5728;Keymap&#x4E2D;&#x8BBE;&#x7F6E;&#xFF09;</li>
+<li><code>Command + Shift + M</code> &#x66FF;&#x6362;&#x7ED3;&#x6784;&#xFF08;Ultimate Edition &#x7248;&#x4E13;&#x7528;&#xFF0C;&#x9700;&#x8981;&#x5728;Keymap&#x4E2D;&#x8BBE;&#x7F6E;&#xFF09;</li>
+</ul>
+<h4 id="&#x4E09;&#x3001;usage-search&#xFF08;&#x4F7F;&#x7528;&#x67E5;&#x8BE2;&#xFF09;"><a name="&#x4E09;&#x3001;usage-search&#xFF08;&#x4F7F;&#x7528;&#x67E5;&#x8BE2;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x3001;usage-search&#xFF08;&#x4F7F;&#x7528;&#x67E5;&#x8BE2;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E09;&#x3001;Usage Search&#xFF08;&#x4F7F;&#x7528;&#x67E5;&#x8BE2;&#xFF09;</h4>
+<ul>
+<li><code>Option + F7 / Command + F7</code> &#x5728;&#x6587;&#x4EF6;&#x4E2D;&#x67E5;&#x627E;&#x7528;&#x6CD5; / &#x5728;&#x7C7B;&#x4E2D;&#x67E5;&#x627E;&#x7528;&#x6CD5;</li>
+<li><code>Command + Shift + F7</code> &#x5728;&#x6587;&#x4EF6;&#x4E2D;&#x7A81;&#x51FA;&#x663E;&#x793A;&#x7684;&#x7528;&#x6CD5;</li>
+<li><code>Command + Option + F7</code> &#x663E;&#x793A;&#x7528;&#x6CD5;</li>
+</ul>
+<h4 id="&#x56DB;&#x3001;compile-and-run&#xFF08;&#x7F16;&#x8BD1;&#x548C;&#x8FD0;&#x884C;&#xFF09;"><a name="&#x56DB;&#x3001;compile-and-run&#xFF08;&#x7F16;&#x8BD1;&#x548C;&#x8FD0;&#x884C;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x56DB;&#x3001;compile-and-run&#xFF08;&#x7F16;&#x8BD1;&#x548C;&#x8FD0;&#x884C;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56DB;&#x3001;Compile and Run&#xFF08;&#x7F16;&#x8BD1;&#x548C;&#x8FD0;&#x884C;&#xFF09;</h4>
+<ul>
+<li><code>Command + F9</code> &#x7F16;&#x8BD1;Project</li>
+<li><code>Command + Shift + F9</code> &#x7F16;&#x8BD1;&#x9009;&#x62E9;&#x7684;&#x6587;&#x4EF6;&#x3001;&#x5305;&#x6216;&#x6A21;&#x5757;</li>
+<li><code>Control + Option + R</code> &#x5F39;&#x51FA; Run &#x7684;&#x53EF;&#x9009;&#x62E9;&#x83DC;&#x5355;</li>
+<li><code>Control + Option + D</code> &#x5F39;&#x51FA; Debug &#x7684;&#x53EF;&#x9009;&#x62E9;&#x83DC;&#x5355;</li>
+<li><code>Control + R</code> &#x8FD0;&#x884C;</li>
+<li><code>Control + D</code> &#x8C03;&#x8BD5;</li>
+<li><code>Control + Shift + R, Control + Shift + D</code> &#x4ECE;&#x7F16;&#x8F91;&#x5668;&#x8FD0;&#x884C;&#x4E0A;&#x4E0B;&#x6587;&#x73AF;&#x5883;&#x914D;&#x7F6E;</li>
+</ul>
+<h4 id="&#x4E94;&#x3001;debugging&#xFF08;&#x8C03;&#x8BD5;&#xFF09;"><a name="&#x4E94;&#x3001;debugging&#xFF08;&#x8C03;&#x8BD5;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x4E94;&#x3001;debugging&#xFF08;&#x8C03;&#x8BD5;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E94;&#x3001;Debugging&#xFF08;&#x8C03;&#x8BD5;&#xFF09;</h4>
+<ul>
+<li><code>F8</code> &#x8FDB;&#x5165;&#x4E0B;&#x4E00;&#x6B65;&#xFF0C;&#x5982;&#x679C;&#x5F53;&#x524D;&#x884C;&#x65AD;&#x70B9;&#x662F;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x5219;&#x4E0D;&#x8FDB;&#x5165;&#x5F53;&#x524D;&#x65B9;&#x6CD5;&#x4F53;&#x5185;</li>
+<li><code>F7</code> &#x8FDB;&#x5165;&#x4E0B;&#x4E00;&#x6B65;&#xFF0C;&#x5982;&#x679C;&#x5F53;&#x524D;&#x884C;&#x65AD;&#x70B9;&#x662F;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x5219;&#x8FDB;&#x5165;&#x5F53;&#x524D;&#x65B9;&#x6CD5;&#x4F53;&#x5185;&#xFF0C;&#x5982;&#x679C;&#x8BE5;&#x65B9;&#x6CD5;&#x4F53;&#x8FD8;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;&#x5219;&#x4E0D;&#x4F1A;&#x8FDB;&#x5165;&#x8BE5;&#x5185;&#x5D4C;&#x7684;&#x65B9;&#x6CD5;&#x4E2D;</li>
+<li><code>Shift + F7</code> &#x667A;&#x80FD;&#x6B65;&#x5165;&#xFF0C;&#x65AD;&#x70B9;&#x6240;&#x5728;&#x884C;&#x4E0A;&#x6709;&#x591A;&#x4E2A;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#xFF0C;&#x4F1A;&#x5F39;&#x51FA;&#x8FDB;&#x5165;&#x54EA;&#x4E2A;&#x65B9;&#x6CD5;</li>
+<li><code>Shift + F8</code> &#x8DF3;&#x51FA;</li>
+<li><code>Option + F9</code> &#x8FD0;&#x884C;&#x5230;&#x5149;&#x6807;&#x5904;&#xFF0C;&#x5982;&#x679C;&#x5149;&#x6807;&#x524D;&#x6709;&#x5176;&#x4ED6;&#x65AD;&#x70B9;&#x4F1A;&#x8FDB;&#x5165;&#x5230;&#x8BE5;&#x65AD;&#x70B9;</li>
+<li><code>Option + F8</code> &#x8BA1;&#x7B97;&#x8868;&#x8FBE;&#x5F0F;&#xFF08;&#x53EF;&#x4EE5;&#x66F4;&#x6539;&#x53D8;&#x91CF;&#x503C;&#x4F7F;&#x5176;&#x751F;&#x6548;&#xFF09;</li>
+<li><code>Command + Option + R</code> &#x6062;&#x590D;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#xFF0C;&#x5982;&#x679C;&#x8BE5;&#x65AD;&#x70B9;&#x4E0B;&#x9762;&#x4EE3;&#x7801;&#x8FD8;&#x6709;&#x65AD;&#x70B9;&#x5219;&#x505C;&#x5728;&#x4E0B;&#x4E00;&#x4E2A;&#x65AD;&#x70B9;&#x4E0A;</li>
+<li><code>Command + F8</code> &#x5207;&#x6362;&#x65AD;&#x70B9;&#xFF08;&#x82E5;&#x5149;&#x6807;&#x5F53;&#x524D;&#x884C;&#x6709;&#x65AD;&#x70B9;&#x5219;&#x53D6;&#x6D88;&#x65AD;&#x70B9;&#xFF0C;&#x6CA1;&#x6709;&#x5219;&#x52A0;&#x4E0A;&#x65AD;&#x70B9;&#xFF09;</li>
+<li><code>Command + Shift + F8</code> &#x67E5;&#x770B;&#x65AD;&#x70B9;&#x4FE1;&#x606F;</li>
+</ul>
+<h4 id="&#x516D;&#x3001;navigation&#xFF08;&#x5BFC;&#x822A;&#xFF09;"><a name="&#x516D;&#x3001;navigation&#xFF08;&#x5BFC;&#x822A;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x516D;&#x3001;navigation&#xFF08;&#x5BFC;&#x822A;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x516D;&#x3001;Navigation&#xFF08;&#x5BFC;&#x822A;&#xFF09;</h4>
+<ul>
+<li><code>Command + O</code> &#x67E5;&#x627E;&#x7C7B;&#x6587;&#x4EF6;</li>
+<li><code>Command + Shift + O</code> &#x67E5;&#x627E;&#x6240;&#x6709;&#x7C7B;&#x578B;&#x6587;&#x4EF6;&#x3001;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x3001;&#x6253;&#x5F00;&#x76EE;&#x5F55;&#xFF0C;&#x6253;&#x5F00;&#x76EE;&#x5F55;&#x9700;&#x8981;&#x5728;&#x8F93;&#x5165;&#x7684;&#x5185;&#x5BB9;&#x524D;&#x9762;&#x6216;&#x540E;&#x9762;&#x52A0;&#x4E00;&#x4E2A;&#x53CD;&#x659C;&#x6760;<code>/</code></li>
+<li><code>Command + Option + O</code> &#x524D;&#x5F80;&#x6307;&#x5B9A;&#x7684;&#x53D8;&#x91CF; / &#x65B9;&#x6CD5;</li>
+<li><code>Control + &#x65B9;&#x5411;&#x952E;&#x5DE6; / Control + &#x65B9;&#x5411;&#x952E;&#x53F3;</code> &#x5DE6;&#x53F3;&#x5207;&#x6362;&#x6253;&#x5F00;&#x7684;&#x7F16;&#x8F91;tab&#x9875;</li>
+<li><code>F12</code> &#x8FD4;&#x56DE;&#x5230;&#x524D;&#x4E00;&#x4E2A;&#x5DE5;&#x5177;&#x7A97;&#x53E3;</li>
+<li><code>Esc</code> &#x4ECE;&#x5DE5;&#x5177;&#x7A97;&#x53E3;&#x8FDB;&#x5165;&#x4EE3;&#x7801;&#x6587;&#x4EF6;&#x7A97;&#x53E3;</li>
+<li><code>Shift + Esc</code> &#x9690;&#x85CF;&#x5F53;&#x524D;&#x6216;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x6D3B;&#x52A8;&#x7684;&#x7A97;&#x53E3;&#xFF0C;&#x4E14;&#x5149;&#x6807;&#x8FDB;&#x5165;&#x4EE3;&#x7801;&#x6587;&#x4EF6;&#x7A97;&#x53E3;</li>
+<li><code>Command + Shift + F4</code> &#x5173;&#x95ED;&#x6D3B;&#x52A8;run/messages/find/... tab</li>
+<li><code>Command + L</code> &#x5728;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x8DF3;&#x8F6C;&#x5230;&#x67D0;&#x4E00;&#x884C;&#x7684;&#x6307;&#x5B9A;&#x5904;</li>
+<li><code>Command + E</code> &#x663E;&#x793A;&#x6700;&#x8FD1;&#x6253;&#x5F00;&#x7684;&#x6587;&#x4EF6;&#x8BB0;&#x5F55;&#x5217;&#x8868;</li>
+<li><code>Option + &#x65B9;&#x5411;&#x952E;&#x5DE6; / Option + &#x65B9;&#x5411;&#x952E;&#x53F3;</code> &#x5149;&#x6807;&#x8DF3;&#x8F6C;&#x5230;&#x5F53;&#x524D;&#x5355;&#x8BCD; / &#x4E2D;&#x6587;&#x53E5;&#x7684;&#x5DE6; / &#x53F3;&#x4FA7;&#x5F00;&#x5934;&#x4F4D;&#x7F6E;</li>
+<li><code>Command + Option + &#x65B9;&#x5411;&#x952E;&#x5DE6; / Command + Option + &#x65B9;&#x5411;&#x952E;&#x53F3;</code> &#x9000;&#x56DE; / &#x524D;&#x8FDB;&#x5230;&#x4E0A;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#x7684;&#x5730;&#x65B9;</li>
+<li><code>Command + Shift + Delete</code> &#x8DF3;&#x8F6C;&#x5230;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x7F16;&#x8F91;&#x7684;&#x5730;&#x65B9;</li>
+<li><code>Option + F1</code> &#x663E;&#x793A;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x9009;&#x62E9;&#x76EE;&#x6807;&#x5F39;&#x51FA;&#x5C42;&#xFF0C;&#x5F39;&#x51FA;&#x5C42;&#x4E2D;&#x6709;&#x5F88;&#x591A;&#x76EE;&#x6807;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x9009;&#x62E9;(&#x5982;&#x5728;&#x4EE3;&#x7801;&#x7F16;&#x8F91;&#x7A97;&#x53E3;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x663E;&#x793A;&#x8BE5;&#x6587;&#x4EF6;&#x7684;Finder)</li>
+<li><code>Command + B / Command + &#x9F20;&#x6807;&#x70B9;&#x51FB;</code> &#x8FDB;&#x5165;&#x5149;&#x6807;&#x6240;&#x5728;&#x7684;&#x65B9;&#x6CD5;/&#x53D8;&#x91CF;&#x7684;&#x63A5;&#x53E3;&#x6216;&#x662F;&#x5B9A;&#x4E49;&#x5904;</li>
+<li><code>Command + Option + B</code> &#x8DF3;&#x8F6C;&#x5230;&#x5B9E;&#x73B0;&#x5904;&#xFF0C;&#x5728;&#x67D0;&#x4E2A;&#x8C03;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x540D;&#x4E0A;&#x4F7F;&#x7528;&#x4F1A;&#x8DF3;&#x5230;&#x5177;&#x4F53;&#x7684;&#x5B9E;&#x73B0;&#x5904;&#xFF0C;&#x53EF;&#x4EE5;&#x8DF3;&#x8FC7;&#x63A5;&#x53E3;</li>
+<li><code>Option + Space, Command + Y</code> &#x5FEB;&#x901F;&#x6253;&#x5F00;&#x5149;&#x6807;&#x6240;&#x5728;&#x65B9;&#x6CD5;&#x3001;&#x7C7B;&#x7684;&#x5B9A;&#x4E49;</li>
+<li><code>Control + Shift + B</code> &#x8DF3;&#x8F6C;&#x5230;&#x7C7B;&#x578B;&#x58F0;&#x660E;&#x5904;</li>
+<li><code>Command + U</code> &#x524D;&#x5F80;&#x5F53;&#x524D;&#x5149;&#x6807;&#x6240;&#x5728;&#x65B9;&#x6CD5;&#x7684;&#x7236;&#x7C7B;&#x7684;&#x65B9;&#x6CD5; / &#x63A5;&#x53E3;&#x5B9A;&#x4E49;</li>
+<li><code>Control + &#x65B9;&#x5411;&#x952E;&#x4E0B; / Control + &#x65B9;&#x5411;&#x952E;&#x4E0A;</code> &#x5F53;&#x524D;&#x5149;&#x6807;&#x8DF3;&#x8F6C;&#x5230;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x7684;&#x524D;&#x4E00;&#x4E2A;/&#x540E;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x540D;&#x4F4D;&#x7F6E;</li>
+<li><code>Command + ] / Command + [</code> &#x79FB;&#x52A8;&#x5149;&#x6807;&#x5230;&#x5F53;&#x524D;&#x6240;&#x5728;&#x4EE3;&#x7801;&#x7684;&#x82B1;&#x62EC;&#x53F7;&#x5F00;&#x59CB;/&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;</li>
+<li><code>Command + F12</code> &#x5F39;&#x51FA;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x7ED3;&#x6784;&#x5C42;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x5F39;&#x51FA;&#x7684;&#x5C42;&#x4E0A;&#x76F4;&#x63A5;&#x8F93;&#x5165;&#x8FDB;&#x884C;&#x7B5B;&#x9009;&#xFF08;&#x53EF;&#x7528;&#x4E8E;&#x641C;&#x7D22;&#x7C7B;&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#xFF09;</li>
+<li><code>Control + H</code> &#x663E;&#x793A;&#x5F53;&#x524D;&#x7C7B;&#x7684;&#x5C42;&#x6B21;&#x7ED3;&#x6784;</li>
+<li><code>Command + Shift + H</code> &#x663E;&#x793A;&#x65B9;&#x6CD5;&#x5C42;&#x6B21;&#x7ED3;&#x6784;</li>
+<li><code>Control + Option + H</code> &#x663E;&#x793A;&#x8C03;&#x7528;&#x5C42;&#x6B21;&#x7ED3;&#x6784;</li>
+<li><code>F2 / Shift + F2</code> &#x8DF3;&#x8F6C;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;/&#x4E0A;&#x4E00;&#x4E2A;&#x7A81;&#x51FA;&#x9519;&#x8BEF;&#x6216;&#x8B66;&#x544A;&#x7684;&#x4F4D;&#x7F6E;</li>
+<li><code>F4 / Command + &#x65B9;&#x5411;&#x952E;&#x4E0B;</code> &#x7F16;&#x8F91;/&#x67E5;&#x770B;&#x4EE3;&#x7801;&#x6E90;</li>
+<li><code>Option + Home</code> &#x663E;&#x793A;&#x5230;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x7684;&#x5BFC;&#x822A;&#x6761;</li>
+<li><code>F3</code>&#x9009;&#x4E2D;&#x6587;&#x4EF6;/&#x6587;&#x4EF6;&#x5939;/&#x4EE3;&#x7801;&#x884C;&#xFF0C;&#x6DFB;&#x52A0;/&#x53D6;&#x6D88;&#x4E66;&#x7B7E;</li>
+<li><code>Option + F3</code> &#x9009;&#x4E2D;&#x6587;&#x4EF6;/&#x6587;&#x4EF6;&#x5939;/&#x4EE3;&#x7801;&#x884C;&#xFF0C;&#x4F7F;&#x7528;&#x52A9;&#x8BB0;&#x7B26;&#x6DFB;&#x52A0;/&#x53D6;&#x6D88;&#x4E66;&#x7B7E;</li>
+<li><code>Control + 0...Control + 9</code> &#x5B9A;&#x4F4D;&#x5230;&#x5BF9;&#x5E94;&#x6570;&#x503C;&#x7684;&#x4E66;&#x7B7E;&#x4F4D;&#x7F6E;</li>
+<li><code>Command + F3</code> &#x663E;&#x793A;&#x6240;&#x6709;&#x4E66;&#x7B7E;</li>
+</ul>
+<h4 id="&#x4E03;&#x3001;refactoring&#xFF08;&#x91CD;&#x6784;&#xFF09;"><a name="&#x4E03;&#x3001;refactoring&#xFF08;&#x91CD;&#x6784;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x4E03;&#x3001;refactoring&#xFF08;&#x91CD;&#x6784;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E03;&#x3001;Refactoring&#xFF08;&#x91CD;&#x6784;&#xFF09;</h4>
+<ul>
+<li><code>F5</code> &#x590D;&#x5236;&#x6587;&#x4EF6;&#x5230;&#x6307;&#x5B9A;&#x76EE;&#x5F55;</li>
+<li><code>F6</code> &#x79FB;&#x52A8;&#x6587;&#x4EF6;&#x5230;&#x6307;&#x5B9A;&#x76EE;&#x5F55;</li>
+<li><code>Command + Delete</code> &#x5728;&#x6587;&#x4EF6;&#x4E0A;&#x4E3A;&#x5B89;&#x5168;&#x5220;&#x9664;&#x6587;&#x4EF6;&#xFF0C;&#x5F39;&#x51FA;&#x786E;&#x8BA4;&#x6846;</li>
+<li><code>Shift + F6</code> &#x91CD;&#x547D;&#x540D;&#x6587;&#x4EF6;</li>
+<li><code>Command + F6</code> &#x66F4;&#x6539;&#x7B7E;&#x540D;</li>
+<li><code>Command + Option + N</code> &#x4E00;&#x81F4;&#x6027;</li>
+<li><code>Command + Option + M</code> &#x5C06;&#x9009;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x63D0;&#x53D6;&#x4E3A;&#x65B9;&#x6CD5;</li>
+<li><code>Command + Option + V</code> &#x63D0;&#x53D6;&#x53D8;&#x91CF;</li>
+<li><code>Command + Option + F</code> &#x63D0;&#x53D6;&#x5B57;&#x6BB5;</li>
+<li><code>Command + Option + C</code> &#x63D0;&#x53D6;&#x5E38;&#x91CF;</li>
+<li><code>Command + Option + P</code> &#x63D0;&#x53D6;&#x53C2;&#x6570;</li>
+</ul>
+<h4 id="&#x516B;&#x3001;vcslocal-history&#xFF08;&#x7248;&#x672C;&#x63A7;&#x5236;&#x672C;&#x5730;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#xFF09;"><a name="&#x516B;&#x3001;vcslocal-history&#xFF08;&#x7248;&#x672C;&#x63A7;&#x5236;&#x672C;&#x5730;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x516B;&#x3001;vcslocal-history&#xFF08;&#x7248;&#x672C;&#x63A7;&#x5236;&#x672C;&#x5730;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x516B;&#x3001;VCS/Local History&#xFF08;&#x7248;&#x672C;&#x63A7;&#x5236;/&#x672C;&#x5730;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#xFF09;</h4>
+<ul>
+<li><code>Command + K</code> &#x63D0;&#x4EA4;&#x4EE3;&#x7801;&#x5230;&#x7248;&#x672C;&#x63A7;&#x5236;&#x5668;</li>
+<li><code>Command + T</code> &#x4ECE;&#x7248;&#x672C;&#x63A7;&#x5236;&#x5668;&#x66F4;&#x65B0;&#x4EE3;&#x7801;</li>
+<li><code>Option + Shift + C</code> &#x67E5;&#x770B;&#x6700;&#x8FD1;&#x7684;&#x53D8;&#x66F4;&#x8BB0;&#x5F55;</li>
+<li><code>Control + C</code> &#x5FEB;&#x901F;&#x5F39;&#x51FA;&#x7248;&#x672C;&#x63A7;&#x5236;&#x5668;&#x64CD;&#x4F5C;&#x9762;&#x677F;</li>
+</ul>
+<h4 id="&#x4E5D;&#x3001;live-templates&#xFF08;&#x52A8;&#x6001;&#x4EE3;&#x7801;&#x6A21;&#x677F;&#xFF09;"><a name="&#x4E5D;&#x3001;live-templates&#xFF08;&#x52A8;&#x6001;&#x4EE3;&#x7801;&#x6A21;&#x677F;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x4E5D;&#x3001;live-templates&#xFF08;&#x52A8;&#x6001;&#x4EE3;&#x7801;&#x6A21;&#x677F;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E5D;&#x3001;Live Templates&#xFF08;&#x52A8;&#x6001;&#x4EE3;&#x7801;&#x6A21;&#x677F;&#xFF09;</h4>
+<ul>
+<li><code>Command + Option + J</code> &#x5F39;&#x51FA;&#x6A21;&#x677F;&#x9009;&#x62E9;&#x7A97;&#x53E3;&#xFF0C;&#x5C06;&#x9009;&#x5B9A;&#x7684;&#x4EE3;&#x7801;&#x4F7F;&#x7528;&#x52A8;&#x6001;&#x6A21;&#x677F;&#x5305;&#x4F4F;</li>
+<li><code>Command + J</code> &#x63D2;&#x5165;&#x81EA;&#x5B9A;&#x4E49;&#x52A8;&#x6001;&#x4EE3;&#x7801;&#x6A21;&#x677F;</li>
+</ul>
+<h4 id="&#x5341;&#x3001;general&#xFF08;&#x901A;&#x7528;&#xFF09;"><a name="&#x5341;&#x3001;general&#xFF08;&#x901A;&#x7528;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x5341;&#x3001;general&#xFF08;&#x901A;&#x7528;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5341;&#x3001;General&#xFF08;&#x901A;&#x7528;&#xFF09;</h4>
+<ul>
+<li><code>Command + 1...Command + 9</code> &#x6253;&#x5F00;&#x76F8;&#x5E94;&#x7F16;&#x53F7;&#x7684;&#x5DE5;&#x5177;&#x7A97;&#x53E3;</li>
+<li><code>Command + S</code> &#x4FDD;&#x5B58;&#x6240;&#x6709;</li>
+<li><code>Command + Option + Y</code> &#x540C;&#x6B65;&#x3001;&#x5237;&#x65B0;</li>
+<li><code>Control + Command + F</code> &#x5207;&#x6362;&#x5168;&#x5C4F;&#x6A21;&#x5F0F;</li>
+<li><code>Command + Shift + F12</code> &#x5207;&#x6362;&#x6700;&#x5927;&#x5316;&#x7F16;&#x8F91;&#x5668;</li>
+<li><code>Option + Shift + F</code> &#x6DFB;&#x52A0;&#x5230;&#x6536;&#x85CF;&#x5939;</li>
+<li><code>Option + Shift + I</code> &#x68C0;&#x67E5;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x4E0E;&#x5F53;&#x524D;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</li>
+<li>Control + ` &#x5FEB;&#x901F;&#x5207;&#x6362;&#x5F53;&#x524D;&#x7684;scheme&#xFF08;&#x5207;&#x6362;&#x4E3B;&#x9898;&#x3001;&#x4EE3;&#x7801;&#x6837;&#x5F0F;&#x7B49;&#xFF09;</li>
+<li><code>Command + ,</code> &#x6253;&#x5F00;IDEA&#x7CFB;&#x7EDF;&#x8BBE;&#x7F6E;</li>
+<li><code>Command + ;</code> &#x6253;&#x5F00;&#x9879;&#x76EE;&#x7ED3;&#x6784;&#x5BF9;&#x8BDD;&#x6846;</li>
+<li><code>Shift + Command + A</code> &#x67E5;&#x627E;&#x52A8;&#x4F5C;&#xFF08;&#x53EF;&#x8BBE;&#x7F6E;&#x76F8;&#x5173;&#x9009;&#x9879;&#xFF09;</li>
+<li><code>Control + Shift + Tab</code> &#x7F16;&#x8F91;&#x7A97;&#x53E3;&#x6807;&#x7B7E;&#x548C;&#x5DE5;&#x5177;&#x7A97;&#x53E3;&#x4E4B;&#x95F4;&#x5207;&#x6362;&#xFF08;&#x5982;&#x679C;&#x5728;&#x5207;&#x6362;&#x7684;&#x8FC7;&#x7A0B;&#x52A0;&#x6309;&#x4E0A;delete&#xFF0C;&#x5219;&#x662F;&#x5173;&#x95ED;&#x5BF9;&#x5E94;&#x9009;&#x4E2D;&#x7684;&#x7A97;&#x53E3;&#xFF09;</li>
+</ul>
+<h4 id="&#x5341;&#x4E00;&#x3001;other&#xFF08;&#x4E00;&#x4E9B;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x4E0A;&#x6CA1;&#x6709;&#x4F53;&#x73B0;&#x7684;&#x5FEB;&#x6377;&#x952E;&#xFF09;"><a name="&#x5341;&#x4E00;&#x3001;other&#xFF08;&#x4E00;&#x4E9B;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x4E0A;&#x6CA1;&#x6709;&#x4F53;&#x73B0;&#x7684;&#x5FEB;&#x6377;&#x952E;&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x5341;&#x4E00;&#x3001;other&#xFF08;&#x4E00;&#x4E9B;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x4E0A;&#x6CA1;&#x6709;&#x4F53;&#x73B0;&#x7684;&#x5FEB;&#x6377;&#x952E;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5341;&#x4E00;&#x3001;Other&#xFF08;&#x4E00;&#x4E9B;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x4E0A;&#x6CA1;&#x6709;&#x4F53;&#x73B0;&#x7684;&#x5FEB;&#x6377;&#x952E;&#xFF09;</h4>
+<ul>
+<li><code>Command + Shift +8</code> &#x7AD6;&#x7F16;&#x8F91;&#x6A21;&#x5F0F;</li>
+</ul>
 
                                 
                                 </section>
@@ -3748,12 +3901,12 @@
 
             
                 
-                <a href="Java去空格.html" class="navigation navigation-prev " aria-label="Previous page: Java 去空格">
+                <a href="IDEA统一设置规范.html" class="navigation navigation-prev " aria-label="Previous page: IDEA统一设置规范">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Java毫秒数转时间.html" class="navigation navigation-next " aria-label="Next page: Java 毫秒数转时间">
+                <a href="IntelliJ IDEA For Win+Linux快捷键.html" class="navigation navigation-next " aria-label="Next page: IntelliJ IDEA  For Win+Linux 快捷键">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -3764,7 +3917,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Java 经纬度测距","level":"2.1.2.1.1.7","depth":5,"next":{"title":"Java 毫秒数转时间","level":"2.1.2.1.1.8","depth":5,"path":"md/Java毫秒数转时间.md","ref":"md/Java毫秒数转时间.md","articles":[]},"previous":{"title":"Java 去空格","level":"2.1.2.1.1.6","depth":5,"path":"md/Java去空格.md","ref":"md/Java去空格.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","donate","splitter","anchor-navigation-ex","-sharing","sharing-plus","-highlight","prism","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/TangHanF/project_record_book"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"","alipayText":"支付宝打赏","button":"打赏一下","title":"","wechat":"https://ws3.sinaimg.cn/large/006tNc79ly1fyy51c9ek3j30u00u0jsp.jpg","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"serif","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"sharing":{"qq":false,"all":["weibo","qq","qzone","douban"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"TangHanF（Mr.Guo）","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"IT人员资料收集册","language":"zh-hans","links":{"sidebar":{}},"gitbook":"3.2.3","description":""},"file":{"path":"md/Java经纬度测距.md","mtime":"2019-01-04T14:53:51.002Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-20T02:34:56.246Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"IntelliJ IDEA For Mac 快捷键","level":"6.1.1.2","depth":3,"next":{"title":"IntelliJ IDEA  For Win+Linux 快捷键","level":"6.1.1.3","depth":3,"path":"md/IntelliJ IDEA For Win+Linux快捷键.md","ref":"md/IntelliJ IDEA For Win+Linux快捷键.md","articles":[]},"previous":{"title":"IDEA统一设置规范","level":"6.1.1.1","depth":3,"path":"md/IDEA统一设置规范.md","ref":"md/IDEA统一设置规范.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","donate","splitter","anchor-navigation-ex","-sharing","sharing-plus","-highlight","prism","expandable-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"github":{"url":"https://github.com/TangHanF/project_record_book"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"","alipayText":"支付宝打赏","button":"打赏一下","title":"","wechat":"https://ws3.sinaimg.cn/large/006tNc79ly1fyy51c9ek3j30u00u0jsp.jpg","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"serif","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"sharing":{"qq":false,"all":["weibo","qq","qzone","douban"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"TangHanF（Mr.Guo）","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"IT人员资料收集册","language":"zh-hans","links":{"sidebar":{}},"gitbook":"3.2.3","description":""},"file":{"path":"md/IntelliJ IDEA For Mac快捷键.md","mtime":"2019-01-20T02:31:28.665Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-20T02:34:56.246Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
