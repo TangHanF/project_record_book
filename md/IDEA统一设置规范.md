@@ -120,6 +120,10 @@ Created by 你的姓名全拼 on ${DATE}.
 
 ![](https://ws3.sinaimg.cn/large/006tNc79ly1fyzmw6gkflj31620niqja.jpg)
 
+## Joker插件
+
+## Bootstrap 4
+
 # 五、代码折叠
 
 如果一些逻辑比较复杂，翻起来比较麻烦，建议进行代码折叠，IDEA中代码折叠是：
@@ -265,7 +269,7 @@ Ctrl+Shift+I（Command+Shift+I）：独立弹窗，一般多用于在不定位�
 
 > Tips:
 >
-> ​	可在项目根目录上执行以上快捷键，已对整个项目的import进行优化
+> 	可在项目根目录上执行以上快捷键，已对整个项目的import进行优化
 
 
 
