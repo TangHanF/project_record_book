@@ -81,6 +81,7 @@
         * 微信小程序开发总结
             * 基础篇
             * 待完善
+            * [微信小程序支付实现](md/微信小程序支付.md)
     * Flask
         * 问题解决
             * [解决pycharm 中 python3 的环境编码是 ASCII 转化为utf-8Click will abort further execution because Python 3](md/解决pycharm中python3环境编码是ASCII转化为utf-8错误.md)
