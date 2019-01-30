@@ -911,7 +911,7 @@ routes: [
   {
     path: '路径',
     components: {
-        'default': 默认视图名称
+        'default': 默认视图名称,
         '视图名称1': 组件名称1,
         '视图名称2': 组件名称2
     }
@@ -1109,3 +1109,43 @@ alias: {
 普通函数的this表示它的直接调用者，即this根据调用情况不断变化，是执行对象；箭头函数的this是固定的，表示定义该箭头函数的所处对象，而不是执行时的对象。
 
 参考[箭头函数与普通函数的区别](https://www.cnblogs.com/biubiuxixiya/p/8610594.html)
+
+
+9.11 props布尔类型、数字类型传值问题
+-----------
+
+例如自定义的‘v-form’组件props定义如下：
+
+```html
+<v-form 
+    is-inline="false" 
+    count='1' 
+    submit-btn-name="搜索">
+    <!--...-->
+    <!--...-->
+    <!--...-->
+</v-form>
+```
+
+```javascript
+props: {
+    isInline: {type: Boolean, default: true, required: false},
+    count: {type: Number, required: true},
+    submitBtnName: {type: String, default: '确定'}
+}
+```
+
+以上会出现问题，会提示is-inline要求是Boolean类型，但是接受到的是字符串’false'，count属性也是类似错误。
+
+以上是字面prop，如果需要传递的JavaScript数字、布尔值，需要使用`v-bind`绑定，以上代码修改为：
+
+```javascript
+<v-form 
+    v-bind:is-inline="false" 
+    v-bind:count='1' 
+    submit-btn-name="搜索">
+    <!--...-->
+    <!--...-->
+    <!--...-->
+</v-form>
+```

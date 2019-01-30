@@ -4,20 +4,20 @@ Git有三大区（工作区、暂存区、版本库）以及几个状态（untra
 
 # 创建版本库、绑定远程版本库
 
-```
+``` bash
 git init
 ```
 
 首次使用可以进行全局设置：
 
-```
+```bash
 git config --global user.name "用户名"
 git config --global user.email "邮箱地址"
 ```
 
 创建 git 仓库:
 
-```
+```bash
 mkdir githubgitee
 cd githubgitee
 git init
@@ -30,7 +30,7 @@ git push -u origin master
 
 如果已经有了仓库，需要和远程仓库进行绑定，需要：
 
-```
+```bash
 git remote add origin git@gitee.com:TangHanF/githubgitee.git
 git push -u origin master
 ```
@@ -159,12 +159,15 @@ get push
 
 # Git撤销修改等
 
-```
-git checkout . ``#本地所有修改的。没有的提交的，都返回到原来的状态
-git stash ``#把所有没有提交的修改暂存到stash里面。可用git stash pop回复。
-git reset --hard HASH ``#返回到某个节点，不保留修改。
-git reset --soft HASH ``#返回到某个节点。保留修改
-```
+`git checkout .` #本地所有修改的。没有的提交的，都返回到原来的状态
+
+`git stash` #把所有没有提交的修改暂存到stash里面。可用git stash pop回复。
+
+`git reset --hard HASH` #返回到某个节点，不保留修改。
+
+`git reset --soft HASH` #返回到某个节点。保留修改
+
+`git rm --cached --force "文件名"` # 将添加到暂存区的文件删除
 
 # git 绑定GitHub和Gitee（码云）
 
@@ -548,9 +551,6 @@ git tag v0.3 3a3cfb5
 ![img](https://ws2.sinaimg.cn/large/006tNc79ly1fyxvovgunsj30fq029mx2.jpg)
 
 
-
-
-
 # git log 美化
 
 但最有意思的是 `format`，可以定制要显示的记录格式，这样的输出便于后期编程提取分析，像这样：
@@ -589,7 +589,7 @@ a11bef0 - Scott Chacon, 11 months ago : first commit
 
 ##     解决Git Bash中文乱码问题
 
-​        中文出现形如：\123\213\234\212\212,输入以下命令：
+中文出现形如：\123\213\234\212\212,输入以下命令：
 
 ```bash
 git config --global core.quotepath false
