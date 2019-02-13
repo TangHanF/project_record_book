@@ -98,15 +98,15 @@ Gitbook项目。
 
 ### Windows系统
 
-请参考本知识库：准备工作/Windows下安装NodeJS
+请参考本知识库：准备工作/Windows下安装NodeJS（guide/install nodejs for pc.md）
 
 ### Linux系统
 
-请参考本知识库：准备工作/Linux下安装NodeJS
+请参考本知识库：准备工作/Linux下安装NodeJS（guide/install nodejs for linux.md）
 
 ### MacOS
 
-请参考本知识库：准备工作/MacOS下安装NodeJS下安装NodeJS
+请参考本知识库：准备工作/MacOS下安装NodeJS下安装NodeJS（guide/install nodejs for mac.md）
 
 ## 2、安装gitbook-cli
 
