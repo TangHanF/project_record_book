@@ -229,6 +229,7 @@
     * Git
         * [Git 总结篇](md/Git 总结篇.md)
         * [Git 常用命令清单](md/Git 常用命令清单.md)
+        * [GitHub用户与基本礼仪](md/GitHub用户与基本礼仪.md)
     * 蒲公英
         * [蒲公英访问者（for Linux）安装手册](md/蒲公英访问者（for Linux）安装手册.md)
     * Maven
