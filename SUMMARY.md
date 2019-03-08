@@ -73,6 +73,19 @@
         * [利用requests库下载西瓜视频实践](md/利用requests库下载西瓜视频实践.md)
         * 实用代码
             * [Python 使用迭代器读取文件](md/Python使用迭代器读取文件.md)
+    * Oracle数据库
+        * [Oracle数据库在CentOS7下实现静默安装](md/Oracle数据库在CentOS7下实现静默安装.md)
+        * [Oracle数据库创建可插拔数据库](md/Oracle数据库创建可插拔数据库.md)
+        * [Oracle数据库启动相关操作](md/Oracle数据库启动相关操作.md)
+        * 常见问题处理
+            * [ORA-01261](md/ORA-01261.md)
+            * [ORA-65179](md/ORA-65179.md)
+            * [ORA-12154](md/ORA-12154.md)
+            * [ORA-03113](md/ORA-03113.md)
+            * [ORA-12541](md/ORA-12541.md)
+            * [ORA-01034](md/ORA-01034.md)
+            * [ORA-28040](md/ORA-28040.md)
+            * [ORA-01033](md/ORA-01033.md)
     * 微信小程序开发
         * mpvue
             * [mpvue使用遇到的问题](md/mpvue使用遇到的问题.md)

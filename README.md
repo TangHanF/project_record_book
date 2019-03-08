@@ -92,7 +92,7 @@ Gitbook项目。
 
 - node.js
 - gitbook-cli
-- gh-pages
+- gh-pages(一键部署到GitHub gitpage，使用：gh-pages -d _book)
 
 ## 1、安装NodeJS
 
