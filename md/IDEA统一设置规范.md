@@ -154,6 +154,9 @@ IDEA有很强大的代码自动完成功能，例如声明变量 ：String str="
 
 设置完成以后就不用考虑大小写问题了，编码效率顿时提升！
 
+2018之后的版本有所改动
+![](https://ws3.sinaimg.cn/large/006tKfTcly1g11b51e16oj31dy0h2n4o.jpg)
+
 # 七、开启自动 import 包的功能
 
 ![img](https://ws1.sinaimg.cn/large/006tNc79ly1fyxyp6di60j30yy0jt45a.jpg)
