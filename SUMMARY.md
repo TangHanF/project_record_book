@@ -242,6 +242,8 @@
         * [IntelliJ IDEA 控制台中文乱码处理](md/IntelliJ IDEA 控制台中文乱码处理.md)
     * Git
         * [Git 总结篇](md/Git 总结篇.md)
+        * [Git 基本操作流程](md/Git 基本操作流程.md)
+        * [Git TortoiseGit与git结合](md/TortoiseGit与git结合.md)
         * [Git 常用命令清单](md/Git 常用命令清单.md)
         * [GitHub用户与基本礼仪](md/GitHub用户与基本礼仪.md)
     * 蒲公英
