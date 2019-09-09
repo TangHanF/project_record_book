@@ -14,7 +14,7 @@
 
 > 首先从Github上找到该项目，然后Fork该项目到你自己的仓库中
 
-![](https://ws2.sinaimg.cn/large/006tNc79ly1fyv2z101h2j31km03gdgf.jpg)
+![](https://gitee.com/TangHanF/pic/raw/master/9gsWZI.png)
 
 ## 2、Clone你Fork出来的项目到本地
 
@@ -40,7 +40,7 @@ git remote add upstream https://github.com/TangHanF/project_record_book.git
 
 可以使用`git remote -v`查看一下远程分支列表情况，例如：
 
-![](https://ws3.sinaimg.cn/large/006tNc79ly1fyv34so6jej30u804e40o.jpg)
+![](https://gitee.com/TangHanF/pic/raw/master/dtuL2S.png)
 
 > **注意：** 请保证`upstream`地址是 https://github.com/TangHanF/project_record_book.git ，不然无法保持项目内容最新版！
 
@@ -64,7 +64,7 @@ git merge upstream/master
 
 ### 1) 修改`SUMMARY.md`目录结构
 
-![](https://ws3.sinaimg.cn/large/006tNc79ly1fyvsc545enj30zm0kiatk.jpg)
+![](https://gitee.com/TangHanF/pic/raw/master/8f8d0H.png)
 
 ### 2) 执行`gitbook init`命令
 
@@ -90,11 +90,9 @@ git push origin master
 
 ## 8、发起pull request
 
-![](https://ws2.sinaimg.cn/large/006tNc79ly1fyv3b2v2gij31io0iygps.jpg)
+![](https://gitee.com/TangHanF/pic/raw/master/4DCQ7L.png)
 
-![](https://ws2.sinaimg.cn/large/006tNc79ly1fyv3cs0z08j317g0u0doo.jpg)
-
-![](https://ws4.sinaimg.cn/large/006tNc79ly1fyv3dtbopbj31680u0q8p.jpg)
+![](https://gitee.com/TangHanF/pic/raw/master/r9AFF7.png)
 
 ## 9、构建书籍内容
 
