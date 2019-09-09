@@ -95,3 +95,22 @@ git push origin master
 ![](https://ws2.sinaimg.cn/large/006tNc79ly1fyv3cs0z08j317g0u0doo.jpg)
 
 ![](https://ws4.sinaimg.cn/large/006tNc79ly1fyv3dtbopbj31680u0q8p.jpg)
+
+## 9、构建书籍内容
+
+首先，使用 gitbook build 将书籍内容输出到默认目录，也就是当前目录下的 _book 目录。
+     
+`gitbook build`
+     
+## 10、将 书籍部署到 gh-pages 分支
+使用 gh-pages 这个工具，它可以将文件夹一键发布到 GitHub 项目下的 gh-pages 分支中（其他分支也可以发布，但是在本文下用到的就是 gh-pages 这个分支）。
+
+首先先安装 gh-pages 工具:
+
+`npm install -g gh-pages`
+
+然后输入以下指令:
+
+`gh-pages -d _book`
+
+然后 _book 下的所有文档都会部署到 gh-pages 分支。大功告成。
