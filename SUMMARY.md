@@ -219,6 +219,9 @@
     * Linux
         * 问题解决
             * [Linux每次开机都要source profile的解决办法](md/Linux每次开机都要source profile的解决办法.md)
+    * Windows
+        * 实用操作
+            * [Windows NAT端口转发命令](md/Windows NAT端口转发命令.md)
 
 -----
 * 其它
