@@ -13,6 +13,7 @@ Windows本身命令行支持配置端口映射，条件是已经安装了IPV6，
 netsh interface portproxy add v4tov4 listenport=8080 listenaddress=10.10.10.10 connectport=80 connectaddress=10.10.10.11
 ```
 
+
 - 删除端口映射 
 
 ```bash
