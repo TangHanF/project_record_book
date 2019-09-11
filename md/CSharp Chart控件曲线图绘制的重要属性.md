@@ -1,6 +1,6 @@
 # CSharp Chart控件:chart、Series、ChartArea曲线图绘制的重要属性
 
-![](https://ws4.sinaimg.cn/large/006tKfTcly1fsruxh6ugij30j60cdq52.jpg)
+![](https://gitee.com/TangHanF/pic/raw/master/2THQ9v.png)
 
 
 
@@ -14,7 +14,7 @@
 ​    数据返回方式是DataSet.Tables[0],即DataTable，也是最基本的数据源方式。这里只介绍DataTable绑定数据源，很简单：
 
 ​                chartData.DataSource = dt;
-                chartData.DataBind();
+​                chartData.DataBind();
 
 # 二、Series
 
@@ -92,7 +92,7 @@
 
 
 ​                 [![C# Chart控件，chart、Series、ChartArea曲线图绘制的重要属性](http://s14.sinaimg.cn/mw690/621e24e2tx6CICc8zOB8d&690) ](http://photo.blog.sina.com.cn/showpic.html#blogid=621e24e20101cp64&url=http://album.sina.com.cn/pic/621e24e2tx6CICc8zOB8d)[![C# Chart控件，chart、Series、ChartArea曲线图绘制的重要属性](http://s2.sinaimg.cn/mw690/621e24e2tx6CICcMzQJd1&690) ](http://photo.blog.sina.com.cn/showpic.html#blogid=621e24e20101cp64&url=http://album.sina.com.cn/pic/621e24e2tx6CICcMzQJd1)     
-        
+​        
 
 真好看![C# <wbr>Chart控件，chart、Series、ChartArea曲线图绘制的重要属性](http://www.sinaimg.cn/uc/myshow/blog/misc/gif/E___6725EN00SIGG.gif)数据多的时候本来显示就乱拉，这样更是画蛇添足，建议透明，正常点的颜色就好
 
@@ -126,7 +126,7 @@
 ​            [![C# Chart控件，chart、Series、ChartArea曲线图绘制的重要属性](http://s13.sinaimg.cn/mw690/621e24e2tx6CICkkb1i5c&690) ](http://photo.blog.sina.com.cn/showpic.html#blogid=621e24e20101cp64&url=http://album.sina.com.cn/pic/621e24e2tx6CICkkb1i5c)
 
 ​    注意：
-    第一，这两个属性对应的是DataTable的两个列，也就是一般的X轴对应时间，Y轴对应数据值，但是也要注意对DataTable的每个数据单元的值做判断，尤其是DBNull或空。我这里的数据库的NewDateTime列数据类型是DateTime类型，NewFyj是Double类型。
+​    第一，这两个属性对应的是DataTable的两个列，也就是一般的X轴对应时间，Y轴对应数据值，但是也要注意对DataTable的每个数据单元的值做判断，尤其是DBNull或空。我这里的数据库的NewDateTime列数据类型是DateTime类型，NewFyj是Double类型。
 
 ​    第二，Series的数据源和Chart控件的数据源有区别，只有DataTable先绑定了Chart，Series才对应到列，否则无法对应。
 
@@ -161,7 +161,7 @@
 ## 11、杂项
 
 ​               [![C# Chart控件，chart、Series、ChartArea曲线图绘制的重要属性](http://s11.sinaimg.cn/mw690/621e24e2tx6CHzLroDM7a&690) ](http://photo.blog.sina.com.cn/showpic.html#blogid=621e24e20101cp64&url=http://album.sina.com.cn/pic/621e24e2tx6CHzLroDM7a)
-                          EmptyPointValue          空数据点的值做平均还是做零处理
+​                          EmptyPointValue          空数据点的值做平均还是做零处理
 
 ​                          LabelStyle               对标签硬性的规定显示在数据点旁的哪个位置
 
@@ -229,7 +229,7 @@ ChartArea对齐方式
 CursorX和CursorY，就是横向和纵向滚动条
 
 ​             [![C# Chart控件，chart、Series、ChartArea曲线图绘制的重要属性](http://s5.sinaimg.cn/mw690/621e24e2tx6CICCyuTq74&690)](http://photo.blog.sina.com.cn/showpic.html#blogid=621e24e20101cp64&url=http://album.sina.com.cn/pic/621e24e2tx6CICCyuTq74)
-                       CursorX.AutoScroll                  滚动条自动滚动
+​                       CursorX.AutoScroll                  滚动条自动滚动
 
 - CursorX.AxisType                    游标作用在主轴还是副轴
 - CursorX.Interval                    游标偏移的间隔
@@ -271,7 +271,7 @@ Name，没啥好说的
 每个轴属性均相同，只说一个一个轴
 
 ​                 [![C# Chart控件，chart、Series、ChartArea曲线图绘制的重要属性](http://s12.sinaimg.cn/mw690/621e24e2tx6CICG6CRZ5b&690) ](http://photo.blog.sina.com.cn/showpic.html#blogid=621e24e20101cp64&url=http://album.sina.com.cn/pic/621e24e2tx6CICG6CRZ5b)
-                        IsLabelAutoFit                  轴上的标签自动调整
+​                        IsLabelAutoFit                  轴上的标签自动调整
 
 - LabelAutoFitMaxFontSize         轴上标签自适应字体大号
 - LabelAutoFitMaxFontSize         轴上标签自适应字体小号
@@ -282,18 +282,18 @@ Name，没啥好说的
 ​    我的Interval这里设置都是NotSet，没有设置Auto，为什么，自己试就明白了。
 
 ​                  [![C# Chart控件，chart、Series、ChartArea曲线图绘制的重要属性](http://s2.sinaimg.cn/mw690/621e24e2tx6CICHYGYN71&690) ](http://photo.blog.sina.com.cn/showpic.html#blogid=621e24e20101cp64&url=http://album.sina.com.cn/pic/621e24e2tx6CICHYGYN71)
-                        TextOrientation             轴的标题方向
+​                        TextOrientation             轴的标题方向
 
 - Title                       轴的名字，X轴是时间轴，Title就是时间
 
 其他属性自己试，简单
 
 ​                  [![C# Chart控件，chart、Series、ChartArea曲线图绘制的重要属性](http://s8.sinaimg.cn/mw690/621e24e2tx6CIweiudF17&690) ](http://photo.blog.sina.com.cn/showpic.html#blogid=621e24e20101cp64&url=http://album.sina.com.cn/pic/621e24e2tx6CIweiudF17)
-                       IntervalAutoMode             间隔是固定值还是随着轴变化，自己试
+​                       IntervalAutoMode             间隔是固定值还是随着轴变化，自己试
 
 ​                     [![C# Chart控件，chart、Series、ChartArea曲线图绘制的重要属性](http://s16.sinaimg.cn/mw690/621e24e2tx6CICL2qJx8f&690) ](http://photo.blog.sina.com.cn/showpic.html#blogid=621e24e20101cp64&url=http://album.sina.com.cn/pic/621e24e2tx6CICL2qJx8f)
-                      ScaleView                      数据视图，就是当前绘制展开的图！重要！
-                      MinSizeType                    游标滚动类型
+​                      ScaleView                      数据视图，就是当前绘制展开的图！重要！
+​                      MinSizeType                    游标滚动类型
 
 ScrollBar                      滚动条
 
@@ -317,7 +317,7 @@ ScrollBar                      滚动条
              [![C# Chart控件，chart、Series、ChartArea曲线图绘制的重要属性](http://s11.sinaimg.cn/mw690/621e24e2tx6CIyULOwW8a&690)](http://photo.blog.sina.com.cn/showpic.html#blogid=621e24e20101cp64&url=http://album.sina.com.cn/pic/621e24e2tx6CIyULOwW8a)
 
 ​                                          简单不说
-       别忘了，咱们还停留在ChartArea.Axis里呢，这仅是一个轴，有需要的别忘了设置其他的轴哦![C# <wbr>Chart控件，chart、Series、ChartArea曲线图绘制的重要属性](http://www.sinaimg.cn/uc/myshow/blog/misc/gif/E___6722EN00SIGG.gif)
+​       别忘了，咱们还停留在ChartArea.Axis里呢，这仅是一个轴，有需要的别忘了设置其他的轴哦![C# <wbr>Chart控件，chart、Series、ChartArea曲线图绘制的重要属性](http://www.sinaimg.cn/uc/myshow/blog/misc/gif/E___6722EN00SIGG.gif)
 [![C# Chart控件，chart、Series、ChartArea曲线图绘制的重要属性](http://s2.sinaimg.cn/mw690/621e24e2tx6CIDebH8J71&690)](http://photo.blog.sina.com.cn/showpic.html#blogid=621e24e20101cp64&url=http://album.sina.com.cn/pic/621e24e2tx6CIDebH8J71)
 
  

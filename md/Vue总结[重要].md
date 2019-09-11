@@ -165,7 +165,7 @@ var app = new Vue({
 1.3 生命周期
 --------
 
-![Vue 实例生命周期](https://ws3.sinaimg.cn/large/006tNc79ly1fyuqpel6nmj30u023zt9s.jpg)
+![image-20190911135737622](https://tva1.sinaimg.cn/large/006y8mN6ly1g6vjdt9z8nj30u01eids7.jpg)
 
 1. **beforeCreate**（创建前），在数据观测和初始化事件还未开始
 2. **created**（创建后），完成数据观测，属性和方法的运算，初始化事件， `$el` 属性还没有显示出来

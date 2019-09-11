@@ -10,23 +10,23 @@
 
 # 1. 新建Spring Initializr 项目
 
-![img](https://ws2.sinaimg.cn/large/006tNc79ly1fyulie92upj30kd0gjdhy.jpg)
+![](https://gitee.com/TangHanF/pic/raw/master/XxaSiT.png)
 
 # 2. 填写项目信息
 
-![img](https://ws3.sinaimg.cn/large/006tNc79ly1fyulib59dwj30kd0gjta9.jpg)
+![](https://gitee.com/TangHanF/pic/raw/master/YxTUpl.png)
 
 # 3. 选择项目使用的技术
 
-![img](https://ws1.sinaimg.cn/large/006tNc79ly1fyuliiwkaej30n70gjaci.jpg)
+![](https://gitee.com/TangHanF/pic/raw/master/kIVDis.png)
 
 # 4. 填写项目名称
 
-![img](https://ws3.sinaimg.cn/large/006tNc79ly1fyulin366kj30n70gj75t.jpg)
+![](https://gitee.com/TangHanF/pic/raw/master/yhIKGo.png)
 
 # 5. 项目架构及依赖
 
-![img](https://ws1.sinaimg.cn/large/006tNc79ly1fyuliqbsabj30bs0fn754.jpg)
+<img src="https://gitee.com/TangHanF/pic/raw/master/TfJUN3.png" style="zoom:50%;" />
 
 # 6. 添加测试控制器
 
@@ -60,11 +60,11 @@ public class FirstApplication {
 
 把它当成一个java类运行就可以了，右键菜单中选择，如图：
 
-![img](https://ws2.sinaimg.cn/large/006tNc79ly1fyulivgwzcj309z07kaa9.jpg)
+<img src="https://gitee.com/TangHanF/pic/raw/master/kI4WQc.png" style="zoom:50%;" />
 
 运行信息：
-![img](https://ws2.sinaimg.cn/large/006tNc79ly1fyuliz771vj30y90e80wm.jpg)
+![](https://gitee.com/TangHanF/pic/raw/master/zejCeC.png)
 
 8. 运行结果，如图：
 
-![img](https://ws3.sinaimg.cn/large/006tNc79ly1fyulj1kf41j309004b0sq.jpg)
+<img src="https://gitee.com/TangHanF/pic/raw/master/3upNHk.png" style="zoom:50%;" />

@@ -3,7 +3,7 @@
 
 
 
-![](https://ws2.sinaimg.cn/large/006tKfTcly1fsru7ucpf1j30xt0h1jut.jpg)
+![](https://gitee.com/TangHanF/pic/raw/master/77ItRr.png)
 
 1. 一个chart可以包含多个chartArea。 chartArea是具体的坐标区域。
 2. 每一个chartArea主要包含X轴，Y轴，副X轴(上方)，副Y轴(右方)，绑定的线条，绑定的图例。 
@@ -11,7 +11,7 @@
 
 其树形实体结构如下所示： 对于每个实体里面的许多样式属性可以自行尝试研究。
 
-![](https://ws2.sinaimg.cn/large/006tKfTcly1fsru8tnm2dj30jv0auwfa.jpg)
+![](https://gitee.com/TangHanF/pic/raw/master/vxdvJM.png)
 
 综上可以对chart的结构有一个基本了解。接下来结合代码进行说明
 
@@ -110,7 +110,7 @@ mainArea2.AxisY.Title = "震动值/(a.u.)";
 mainArea1.AxisX.MajorGrid.Enabled = false;  
 mainArea1.AxisY.MajorGrid.Enabled = false;  
 mainArea1.AxisX.MinorTickMark.Enabled = false;  
-  
+
 mainArea2.AxisX.MajorGrid.Enabled = false;  
 mainArea2.AxisY.MajorGrid.Enabled = false;  
 mainArea2.AxisX.MinorTickMark.Enabled = false; 
@@ -136,7 +136,7 @@ chart.Legends[0].Position = p;   //每创建一个对象都会存放在chart的�
 Title title = new Title("chart使用方法");  
 chart.Titles.Add(title);  
 
- ```
+```
 
 # 将前面创建的对象加入到自己所属的父实体中
 
@@ -168,3 +168,4 @@ chart2.Series.Add(series4);
 
 
 参考博客：[](https://blog.csdn.net/andrewniu/article/details/78770186)
+```
