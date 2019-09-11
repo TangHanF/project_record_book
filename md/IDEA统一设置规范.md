@@ -313,7 +313,12 @@ Ctrl+Shift+I（Command+Shift+I）：独立弹窗，一般多用于在不定位�
 
 在开发过程中善用 "//TODO" 待办事项，以便后续检查，同时也方便本人及其他项目成员快速定位。
 例如，测试环境为了方便测试不检查token有效性，但是生产环境必须要检查，如果类似的情况比较多，那么到了发版时肯定会有遗漏的开关没有打开，如果在相关开关代码位置加上“//TODO 提示....”，那么发版时直接用IDEA查看一下所有TODO即可，防止遗漏
-    
+
+# 十八、修改IDEA内存大小
+
+![](https://gitee.com/TangHanF/pic/raw/master/XES3Rw.png)
+
+![](https://gitee.com/TangHanF/pic/raw/master/PY0K2b.png)
 
 
 
